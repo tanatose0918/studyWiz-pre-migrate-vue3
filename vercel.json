@@ -1,0 +1,27 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/%e0%b8%a1%e0%b8%b1%e0%b8%98%e0%b8%a2%e0%b8%a1", "destination": "/level/high-school", "permanent": true },
+    { "source": "/level-th", "destination": "/level", "permanent": true },
+    { "source": "/testimonial-2", "destination": "/testimonial", "permanent": true },
+    { "source": "/blog-2", "destination": "/blog", "permanent": true },
+    { "source": "/all", "destination": "/blog/all", "permanent": true },
+    { "source": "/activities-2", "destination": "/activities", "permanent": true },
+    { "source": "/about-2", "destination": "/about", "permanent": true },
+    { "source": "/contact-th", "destination": "/contact", "permanent": true },
+    { "source": "/asia", "destination": "/country/asia", "permanent": true },
+    { "source": "/europe-uk", "destination": "/country/europe-uk", "permanent": true },
+    { "source": "/canada-usa", "destination": "/country/canada-usa", "permanent": true },
+    { "source": "/australia-new-zealand", "destination": "/country/australia-new-zealand", "permanent": true },
+    { "source": "/universitychina", "destination": "/level/university/china", "permanent": true },
+    { "source": "/universityusa", "destination": "/level/university/usa", "permanent": true },
+    { "source": "/universityjapan", "destination": "/level/university/japan", "permanent": true },
+    { "source": "/universitykorea", "destination": "/level/university/korea", "permanent": true },
+    { "source": "/en/universitypoland", "destination": "/level/university/poland", "permanent": true },
+    { "source": "/en/universityrussia", "destination": "/level/university/russia", "permanent": true },
+    { "source": "/%e0%b8%9a%e0%b8%97%e0%b8%84%e0%b8%a7%e0%b8%b2%e0%b8%a1%e0%b8%88%e0%b8%b5%e0%b8%99", "destination": "/blog/category/china-korea-japan", "permanent": true },
+    { "source": "/%e0%b8%9a%e0%b8%97%e0%b8%84%e0%b8%a7%e0%b8%b2%e0%b8%a1%e0%b8%a2%e0%b8%b8%e0%b9%82%e0%b8%a3%e0%b8%9b_%e0%b8%a3%e0%b8%b1%e0%b8%aa%e0%b9%80%e0%b8%8b%e0%b8%b5%e0%b8%a2", "destination": "/blog/category/europe-russia", "permanent": true },
+    { "source": "/%e0%b8%9a%e0%b8%97%e0%b8%84%e0%b8%a7%e0%b8%b2%e0%b8%a1%e0%b8%ad%e0%b9%80%e0%b8%a1%e0%b8%a3%e0%b8%b4%e0%b8%81%e0%b8%b2_%e0%b9%81%e0%b8%84%e0%b8%99%e0%b8%99%e0%b8%b2%e0%b8%94%e0%b8%b2", "destination": "/blog/category/usa-canada", "permanent": true }
+  ]
+}

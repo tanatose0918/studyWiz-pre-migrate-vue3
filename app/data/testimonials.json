@@ -1,0 +1,38 @@
+[
+  {
+    "id": "test-1",
+    "studentName": "น้องฮีโร่",
+    "institution": "Lazarski University, วอร์ซอ โปแลนด์",
+    "program": "Faculty of Economics and Management",
+    "year": "Alumni 2024",
+    "quote": "การมาเรียนต่อที่โปแลนด์กับ Studywiz ทำให้ผมได้เปิดโลกกว้าง ค่าใช้จ่ายไม่แพง และอาจารย์ดูแลเป็นกันเองมากๆ ครับ",
+    "avatar": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=200&q=80"
+  },
+  {
+    "id": "test-2",
+    "studentName": "น้องพลอย ปวีณ์กร",
+    "institution": "China Medical University, ประเทศจีน",
+    "program": "Pharmaceutical Engineering ปี 4",
+    "year": "Student Year 4",
+    "quote": "เรียนหมอและวิศวกรรมยาที่จีน ท้าทายและคุ้มค่ามากค่ะ มีโรงพยาบาลและแล็บวิจัยมาตรฐานสากลให้ฝึกงานจริง",
+    "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80"
+  },
+  {
+    "id": "test-3",
+    "studentName": "น้องปานดาว ปณาลี",
+    "institution": "University of Wroclaw, โปแลนด์",
+    "program": "Business Administration (ทุน 100%)",
+    "year": "Scholarship Recipient",
+    "quote": "ขอบคุณพี่ๆ Studywiz ที่ช่วยตรวจ SOP และซ้อมสัมภาษณ์จนได้รับทุน 100% ประหยัดค่าใช้จ่ายให้ครอบครัวได้เยอะเลยค่ะ",
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80"
+  },
+  {
+    "id": "test-4",
+    "studentName": "น้องกั๊ป",
+    "institution": "Public High School, ประเทศแคนาดา",
+    "program": "High School Grade 12",
+    "year": "Grade 12",
+    "quote": "เมืองที่อยู่ปลอดภัยมาก โฮสต์แฟมิลี่น่ารักและคอยสนับสนุนตลอดเวลา การมาเรียนมัธยมที่แคนาดาเปลี่ยนชีวิตผมจริงๆ ครับ",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80"
+  }
+]

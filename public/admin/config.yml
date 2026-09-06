@@ -1,0 +1,98 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  # 1. Homepage Carousel & Highlights
+  - name: "homepage"
+    label: "หน้าแรก: แบนเนอร์ & ปรัชญา (Homepage)"
+    files:
+      - file: "app/data/homeContent.json"
+        label: "Carousel Highlights & ข้อมูลหลัก"
+        name: "home_data"
+        fields:
+          - label: "สไลด์แบนเนอร์เด่น (Hero Slides)"
+            name: "slides"
+            widget: "list"
+            fields:
+              - { label: "รหัสสไลด์ (ID)", name: "id", widget: "string" }
+              - { label: "ป้ายกำกับ (Badge)", name: "badge", widget: "string", required: false }
+              - { label: "หัวข้อเด่น (Title)", name: "title", widget: "string" }
+              - { label: "คำบรรยายสรุป (Subtitle)", name: "subtitle", widget: "string" }
+              - { label: "รูปภาพแบนเนอร์ (Image)", name: "image", widget: "string" }
+              - { label: "ข้อความบนปุ่มหลัก (CTA Text)", name: "ctaText", widget: "string" }
+              - { label: "ลิงก์ปุ่มหลัก (CTA Link)", name: "ctaLink", widget: "string" }
+              - { label: "ข้อความบนปุ่มรอง", name: "secondaryCtaText", widget: "string" }
+              - { label: "ลิงก์ปุ่มรอง", name: "secondaryCtaLink", widget: "string" }
+
+          - label: "ส่วนปรัชญาสถาบัน & วิดีโอ (Philosophy)"
+            name: "philosophy"
+            widget: "object"
+            fields:
+              - { label: "YouTube Embed URL", name: "videoUrl", widget: "string" }
+              - { label: "ปีที่ก่อตั้ง", name: "foundedYear", widget: "number" }
+              - { label: "ข้อความจำนวนปี", name: "yearsOfTrust", widget: "string" }
+              - { label: "หัวข้อหลัก", name: "headline", widget: "string" }
+              - { label: "คำบรรยายปรัชญา", name: "description", widget: "text" }
+              - { label: "จุดเด่นสำคัญ (Highlights)", name: "highlights", widget: "list" }
+
+  # 2. PR News & Articles
+  - name: "blogs"
+    label: "บทความ & ข่าวสาร PR (Blogs)"
+    files:
+      - file: "app/data/blogs.json"
+        label: "รายการบทความทั้งหมด"
+        name: "blog_list"
+        fields:
+          - label: "บทความ (Articles)"
+            name: ""
+            widget: "list"
+            fields:
+              - { label: "รหัส (ID)", name: "id", widget: "string" }
+              - { label: "Slug (URL)", name: "slug", widget: "string" }
+              - { label: "หัวข้อข่าว / บทความ", name: "title", widget: "string" }
+              - { label: "หมวดหมู่ (Category)", name: "category", widget: "select", options: ["จีน เกาหลี ญี่ปุ่น", "ยุโรปและรัสเซีย", "อเมริกาและแคนาดา", "ทั่วไป"] }
+              - { label: "Category Slug", name: "categorySlug", widget: "string" }
+              - { label: "วันที่เผยแพร่", name: "date", widget: "string" }
+              - { label: "ผู้เขียน", name: "author", widget: "string" }
+              - { label: "รูปหน้าปก (Image URL)", name: "image", widget: "string" }
+              - { label: "ข้อความสรุปสั้น (Excerpt)", name: "excerpt", widget: "text" }
+              - { label: "เนื้อหาบทความฉบับเต็ม (Content)", name: "content", widget: "text" }
+
+  # 3. Seminars & Activities
+  - name: "activities"
+    label: "กิจกรรม & สัมมนา (Activities)"
+    files:
+      - file: "app/data/activities.json"
+        label: "รายการกิจกรรม"
+        name: "activity_list"
+        fields:
+          - label: "กิจกรรม (Events)"
+            name: ""
+            widget: "list"
+            fields:
+              - { label: "รหัส (ID)", name: "id", widget: "string" }
+              - { label: "ชื่องานสัมมนา", name: "title", widget: "string" }
+              - { label: "วันที่จัดงาน", name: "date", widget: "string" }
+              - { label: "ช่องทาง (Platform)", name: "platform", widget: "string" }
+              - { label: "สถานะ", name: "status", widget: "select", options: ["เปิดรับลงทะเบียน", "รับชมย้อนหลัง"] }
+              - { label: "รูปภาพประชาสัมพันธ์", name: "image", widget: "string" }
+              - { label: "รายละเอียด", name: "description", widget: "text" }
+
+  # 4. Global Site Settings & Hotlines
+  - name: "settings"
+    label: "ข้อมูลติดต่อ & สายด่วน (Site Settings)"
+    files:
+      - file: "app/data/siteSettings.json"
+        label: "เบอร์โทร & สาขา"
+        name: "global_settings"
+        fields:
+          - { label: "ชื่อเว็บไซต์", name: "siteName", widget: "string" }
+          - { label: "สโลแกน", name: "tagline", widget: "string" }
+          - { label: "อีเมลหลัก", name: "primaryEmail", widget: "string" }
+          - { label: "เบอร์โทรสายด่วน (Hotlines)", name: "hotlinePhones", widget: "list" }

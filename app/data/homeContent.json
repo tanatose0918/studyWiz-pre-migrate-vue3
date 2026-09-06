@@ -1,0 +1,81 @@
+{
+  "slides": [
+    {
+      "id": "slide-1",
+      "badge": "รับสมัครเรียนต่อ 2025 - 2026",
+      "title": "ศึกษาต่อต่างประเทศครบวงจร กับผู้เชี่ยวชาญกว่า 38 ปี",
+      "subtitle": "ค้นพบโอกาสที่ไร้ขีดจำกัด ทั้งหลักสูตรภาษา มัธยม และมหาวิทยาลัยชั้นนำทั่วโลก พร้อมคำปรึกษาฟรีทุกขั้นตอน",
+      "ctaText": "ค้นหาหลักสูตรที่ใช่",
+      "ctaLink": "/country",
+      "secondaryCtaText": "ปรึกษาผู้เชี่ยวชาญ",
+      "secondaryCtaLink": "/contact",
+      "bgGradient": "from-blue-900 via-indigo-950 to-slate-900",
+      "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "slide-2",
+      "badge": "ยอดนิยมในยุโรป",
+      "title": "เรียนแพทย์ & บริหารธุรกิจ มาตรฐานยุโรป งบไทยๆ",
+      "subtitle": "เปิดประตูสู่สถาบันการแพทย์ชั้นนำในรัสเซีย และมหาวิทยาลัยชื่อดังในโปแลนด์ ค่าใช้จ่ายคุ้มค่า ได้รับการรับรองสากล",
+      "ctaText": "ดูข้อมูลสถาบัน",
+      "ctaLink": "/level/university/poland",
+      "secondaryCtaText": "อ่านรีวิวศิษย์เก่า",
+      "secondaryCtaLink": "/testimonial",
+      "bgGradient": "from-slate-900 via-purple-950 to-blue-900",
+      "image": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "slide-3",
+      "badge": "โครงการมัธยม & แลกเปลี่ยน",
+      "title": "มัธยมศึกษาในต่างประเทศ ก้าวแรกสู่มหาวิทยาลัยระดับโลก",
+      "subtitle": "โรงเรียนประจำและโรงเรียนนานาชาติคุณภาพสูงในแคนาดา สหรัฐอเมริกา เกาหลีใต้ และจีน พัฒนาภาษาอย่างก้าวกระโดด",
+      "ctaText": "ดูโครงการมัธยม",
+      "ctaLink": "/level/high-school",
+      "secondaryCtaText": "นัดหมายแนะแนว",
+      "secondaryCtaLink": "/contact",
+      "bgGradient": "from-indigo-950 via-blue-900 to-slate-950",
+      "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+    }
+  ],
+  "philosophy": {
+    "videoUrl": "https://www.youtube.com/embed/Ugo39dSYbR0",
+    "foundedYear": 2528,
+    "yearsOfTrust": "38+",
+    "headline": "เราเชื่อว่าทุกคนควรได้รับโอกาสเลือกศึกษาต่อในต่างประเทศ",
+    "description": "ก่อตั้งขึ้นโดยนักการศึกษาตั้งแต่ปี พ.ศ. 2528 เราเชื่อว่าโอกาสทางการศึกษาไม่ควรถูกปิดกั้นด้วย อายุ งบประมาณ เกรดเฉลี่ย เพศสภาพ หรือปัจจัยอื่นๆ Studywiz จึงเป็นผู้บุกเบิกการศึกษาในนานาประเทศมากกว่า 38 ปี และเรามีทางเลือกให้กับทุกคน ไม่ว่าจะมีงบประมาณมากหรือน้อย เกรดดีเลิศหรือเฉียดฉิว ภาษาดีหรือไม่ดี เราพร้อมช่วยคุณค้นพบเส้นทางที่ดีที่สุด",
+    "highlights": [
+      "สมาชิกสมาคมไทยแนะแนวการศึกษานานาชาติ (TIECA)",
+      "สมาชิก Federation of Education and Language Consultant Associations (FELCA)",
+      "ดูแลครบวงจรตั้งแต่การเลือกสถาบัน ยื่นใบสมัคร วีซ่า จนถึงการเดินทางและที่พัก"
+    ]
+  },
+  "programs": [
+    {
+      "id": "lang",
+      "titleTh": "ภาษา (Language)",
+      "titleEn": "Language Programs",
+      "description": "เรียนต่อหลักสูตรภาษาระยะสั้นและระยะยาว พัฒนาทักษะได้รวดเร็วกับสถาบันภาษาชั้นนำในอังกฤษ ออสเตรเลีย แคนาดา สหรัฐฯ และเอเชีย",
+      "link": "/country",
+      "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&q=80",
+      "badge": "ทุกระดับภาษา"
+    },
+    {
+      "id": "highschool",
+      "titleTh": "มัธยม (High School)",
+      "titleEn": "High School Programs",
+      "description": "แนะแนวการศึกษาต่อระดับมัธยมในโรงเรียนประจำและโครงการแลกเปลี่ยนมาตรฐานสากล เสริมสร้างความเป็นผู้นำและการพึ่งพาตนเอง",
+      "link": "/level/high-school",
+      "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80",
+      "badge": "เปิดรับสมัครตลอดปี"
+    },
+    {
+      "id": "university",
+      "titleTh": "วิทยาลัย / มหาวิทยาลัย",
+      "titleEn": "College & University",
+      "description": "ศึกษาต่อปริญญาตรี ปริญญาโท และเอก ในสถาบันการแพทย์ บริหารธุรกิจ และวิศวกรรมระดับโลก มีทุนการศึกษาและตัวเลือกงบประหยัด",
+      "link": "/country",
+      "image": "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=600&q=80",
+      "badge": "มีทุนสนับสนุน"
+    }
+  ]
+}

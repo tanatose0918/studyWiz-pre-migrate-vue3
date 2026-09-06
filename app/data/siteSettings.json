@@ -1,0 +1,57 @@
+{
+  "siteName": "Studywiz",
+  "tagline": "ศึกษาต่อต่างประเทศครบวงจรกับผู้เชี่ยวชาญ ค้นพบโอกาสที่ไร้ขีดจำกัด",
+  "primaryEmail": "info@studywiz.net",
+  "hotlinePhones": [
+    "08-1934-9695",
+    "08-2282-9882",
+    "08-1655-7044",
+    "08-6305-5259"
+  ],
+  "bangkokOffice": {
+    "title": "สำนักงานใหญ่ กรุงเทพฯ (Bangkok HQ)",
+    "address": "7 ซอยพหลโยธิน 19/1 ถนนพหลโยธิน แขวง/เขต จตุจักร กรุงเทพฯ 10900",
+    "mapUrl": "https://maps.app.goo.gl/yM9V3i6U5E4G2hN48",
+    "phones": [
+      "(66)8 1934 9695",
+      "(66)8 2282 9882",
+      "(66)8 1655 7044",
+      "(66)8 6305 5259"
+    ],
+    "email": "info@studywiz.net"
+  },
+  "chiangmaiOffice": {
+    "title": "สำนักงานสาขา เชียงใหม่ (Chiang Mai Branch)",
+    "address": "เชียงใหม่ ประเทศไทย",
+    "mapUrl": "https://maps.app.goo.gl",
+    "phones": [
+      "(66)8 1359 2100"
+    ],
+    "email": "north@studywiz.net"
+  },
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/studywiz",
+    "facebookCnx": "https://www.facebook.com/Studywizcnx/",
+    "line": "https://page.line.me/?accountId=studywiz",
+    "instagram": "https://www.instagram.com/studywizbkk/",
+    "tiktok": "https://www.tiktok.com/@studywiz8",
+    "youtube": "https://www.youtube.com/channel/UCRddmcoQ5sPejlFrVqRirdg"
+  },
+  "lineCommunities": [
+    {
+      "name": "Line OpenChat: ศึกษาต่อต่างประเทศ",
+      "description": "ชุมชนแลกเปลี่ยนข้อมูล ทุนการศึกษา และการเตรียมตัวไปเรียนต่อทั่วโลก",
+      "url": "https://line.me/ti/g2/XmJx5QqNupiRGFdV1KqHUWsHi7fJ9crDAUV1Rw"
+    },
+    {
+      "name": "Line OpenChat: เรียนนอก งบไทยๆ",
+      "description": "แนะนำหลักสูตรคุณภาพสูง คุ้มค่า งบประมาณเข้าถึงได้ ในยุโรป รัสเซีย และเอเชีย",
+      "url": "https://line.me/ti/g2/QNgFgb8YoF0beGTwNOuVrJqljg4qiUUeNmQvYw"
+    },
+    {
+      "name": "Linktree รวมทุกช่องทาง",
+      "description": "รวมแบบฟอร์มรับสมัคร คอนแท็กต์ด่วน และโปรชัวร์ดาวน์โหลด",
+      "url": "https://linktr.ee/studywiz"
+    }
+  ]
+}

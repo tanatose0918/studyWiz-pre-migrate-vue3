@@ -1,0 +1,29 @@
+[
+  {
+    "id": "act-1",
+    "title": "เรียนแพทย์รัสเซียดียังไง (Medicine in Russia Online Webinar)",
+    "date": "เร็วๆ นี้ (ติดตามได้ทางแฟนเพจ)",
+    "platform": "Zoom Meeting",
+    "status": "เปิดรับลงทะเบียน",
+    "description": "เจาะลึกหลักสูตรแพทยศาสตร์ภาษาอังกฤษที่ Kursk State Medical University ค่าเทอม การใช้ชีวิต และเกณฑ์การสอบใบประกอบวิชาชีพ",
+    "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "act-2",
+    "title": "เคลียร์คิว เคลียร์ใจ ถามไป-ตอบมา กับคณาจารย์มหาวิทยาลัยแพทย์ชั้นนำของจีน",
+    "date": "สัมมนาออนไลน์ย้อนหลัง",
+    "platform": "Facebook Live & Zoom",
+    "status": "รับชมย้อนหลัง",
+    "description": "ถาม-ตอบสดกับตัวแทนคณาจารย์จาก China Medical University และ Dalian Medical University เกี่ยวกับโควต้านักเรียนไทย",
+    "image": "https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "act-3",
+    "title": "สัมมนาสด: ไปเรียนเกาหลีกัน แนะนำทุนการศึกษา SolBridge Business School",
+    "date": "สัมมนาออนไลน์ย้อนหลัง",
+    "platform": "Studywiz Studio",
+    "status": "รับชมย้อนหลัง",
+    "description": "เปิดเส้นทางเรียนบริหารธุรกิจในเกาหลีใต้ คว้ารางวัลระดับเอเชีย พร้อมรับทุนค่าเล่าเรียนสูงสุด 70%",
+    "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=600&q=80"
+  }
+]

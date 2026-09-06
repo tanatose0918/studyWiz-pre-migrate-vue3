@@ -1,0 +1,145 @@
+[
+  {
+    "id": "lazarski",
+    "slug": "lazarski-university",
+    "nameTh": "มหาวิทยาลัยลาซาร์สกี (Lazarski University)",
+    "nameEn": "Lazarski University",
+    "country": "Poland",
+    "countrySlug": "poland",
+    "city": "Warsaw",
+    "level": "university",
+    "programs": [
+      "คณะแพทยศาสตร์",
+      "บริหารธุรกิจ (BBA)",
+      "ความสัมพันธ์ระหว่างประเทศ (IR)"
+    ],
+    "highlights": "มหาวิทยาลัยเอกชนอันดับ 1 ของโปแลนด์ มีหลักสูตร Double Degree ร่วมกับ UK",
+    "image": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "kursk-med",
+    "slug": "kursk-state-medical-university",
+    "nameTh": "มหาวิทยาลัยการแพทย์เคิร์สก์ (Kursk State Medical University)",
+    "nameEn": "Kursk State Medical University",
+    "country": "Russia",
+    "countrySlug": "russia",
+    "city": "Kursk",
+    "level": "university",
+    "programs": [
+      "แพทยศาสตร์ทั่วไป (General Medicine 6 ปี หลักสูตรอังกฤษ)"
+    ],
+    "highlights": "สถาบันแพทย์แห่งแรกในรัสเซียที่เปิดสอนเป็นภาษาอังกฤษ ค่าเทอมเข้าถึงง่าย ได้รับการรับรองแพทยสภา",
+    "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "solbridge",
+    "slug": "solbridge-international-school-of-business",
+    "nameTh": "วิทยาลัยบริหารธุรกิจนานาชาติโซลบริดจ์ (SolBridge)",
+    "nameEn": "SolBridge International School of Business",
+    "country": "South Korea",
+    "countrySlug": "korea",
+    "city": "Daejeon",
+    "level": "university",
+    "programs": [
+      "BBA บริหารธุรกิจ",
+      "MBA การจัดการระดับนานาชาติ"
+    ],
+    "highlights": "ได้รับการรับรอง AACSB เจ้าของรางวัลนวัตกรรมการศึกษาระดับเอเชีย สอนเป็นภาษาอังกฤษ 100%",
+    "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "china-med",
+    "slug": "china-medical-university",
+    "nameTh": "มหาวิทยาลัยแพทยศาสตร์แห่งประเทศจีน (China Medical University)",
+    "nameEn": "China Medical University",
+    "country": "China",
+    "countrySlug": "china",
+    "city": "Shenyang",
+    "level": "university",
+    "programs": [
+      "MBBS แพทยศาสตร์หลักสูตรภาษาอังกฤษ"
+    ],
+    "highlights": "หนึ่งในมหาวิทยาลัยแพทย์ระดับท็อปของจีน มีโรงพยาบาลในเครือขนาดใหญ่และสิ่งอำนวยความสะดวกครบครัน",
+    "image": "https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "dalian-med",
+    "slug": "dalian-medical-university",
+    "nameTh": "มหาวิทยาลัยแพทยศาสตร์ต้าเหลียน (Dalian Medical University)",
+    "nameEn": "Dalian Medical University",
+    "country": "China",
+    "countrySlug": "china",
+    "city": "Dalian",
+    "level": "university",
+    "programs": [
+      "MBBS แพทยศาสตร์หลักสูตรภาษาอังกฤษ"
+    ],
+    "highlights": "เมืองชายทะเลบรรยากาศน่าเรียน อัตราผ่านเกณฑ์ใบประกอบวิชาชีพสูง นักเรียนไทยนิยม",
+    "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "maple-leaf",
+    "slug": "maple-leaf-international-schools",
+    "nameTh": "โรงเรียนนานาชาติเมเปิลลีฟ (Maple Leaf International Schools)",
+    "nameEn": "Maple Leaf International Schools",
+    "country": "China / Canada",
+    "countrySlug": "china",
+    "city": "Dalian / Various",
+    "level": "highschool",
+    "programs": [
+      "มัธยมศึกษาตอนต้น-ปลาย (British Columbia Curriculum)"
+    ],
+    "highlights": "จบแล้วได้รับวุฒิการศึกษาแคนาดา (BC Dogwood Diploma) ก้าวสู่มหาวิทยาลัยทั่วโลกได้ทันที",
+    "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "boren-school",
+    "slug": "boren-sino-canadian-school",
+    "nameTh": "โรงเรียนบอร์เรน ซิโน-แคนาเดียน (Boren Sino-Canadian School)",
+    "nameEn": "Boren Sino-Canadian School",
+    "country": "China / Canada",
+    "countrySlug": "china",
+    "city": "Guangdong",
+    "level": "highschool",
+    "programs": [
+      "มัธยมศึกษาหลักสูตรออนแทรีโอ แคนาดา (OSSD)"
+    ],
+    "highlights": "โรงเรียนประจำระบบสากล ปลอดภัย เรียน 2 ภาษา (อังกฤษและจีน) ค่าใช้จ่ายคุ้มค่า",
+    "image": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "full-sail",
+    "slug": "full-sail-university",
+    "nameTh": "ฟูลเซลล์ ยูนิเวอร์ซิตี้ (Full Sail University)",
+    "nameEn": "Full Sail University",
+    "country": "USA",
+    "countrySlug": "usa",
+    "city": "Florida",
+    "level": "university",
+    "programs": [
+      "Game Design",
+      "Film & Media Production",
+      "Music Production",
+      "Computer Animation"
+    ],
+    "highlights": "มหาวิทยาลัยเฉพาะทางด้านสื่อ ดนตรี ภาพยนตร์ และเกม ศิษย์เก่าทำงานในโปรดักชันระดับออสการ์",
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "kent-state",
+    "slug": "kent-state-university",
+    "nameTh": "มหาวิทยาลัยเคนต์สเตต (Kent State University)",
+    "nameEn": "Kent State University",
+    "country": "USA",
+    "countrySlug": "usa",
+    "city": "Ohio",
+    "level": "university",
+    "programs": [
+      "Aeronautics (การบิน)",
+      "Fashion Design",
+      "Business Management"
+    ],
+    "highlights": "มหาวิทยาลัยรัฐบาลขนาดใหญ่ของสหรัฐฯ มีทุนการศึกษาสำหรับนักเรียนต่างชาติเกรดดี",
+    "image": "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=600&q=80"
+  }
+]
