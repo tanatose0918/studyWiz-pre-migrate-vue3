@@ -83,7 +83,7 @@ const lineUrl = siteSettings.socialLinks.line;
             class="w-8 h-8 rounded-lg flex items-center justify-center text-slate-500 hover:bg-slate-100 transition"
             aria-label="Close menu"
           >
-            ✕
+            <AppIcon name="x" class="w-4 h-4 text-slate-500" />
           </button>
         </div>
 
@@ -96,9 +96,11 @@ const lineUrl = siteSettings.socialLinks.line;
                 class="flex items-center justify-between px-3 py-2.5 rounded-xl text-slate-800 font-medium text-sm hover:bg-slate-50 cursor-pointer"
               >
                 <span>{{ item.name }}</span>
-                <span class="text-xs text-slate-400 transform transition-transform" :class="{ 'rotate-180': isBlogExpanded }">
-                  ▼
-                </span>
+                <AppIcon 
+                  name="chevron-down" 
+                  class="w-3.5 h-3.5 text-slate-400 transform transition-transform" 
+                  :class="{ 'rotate-180': isBlogExpanded }" 
+                />
               </div>
 
               <!-- Submenu -->
@@ -134,7 +136,8 @@ const lineUrl = siteSettings.socialLinks.line;
             :href="`tel:${primaryPhone.replace(/-/g, '')}`" 
             class="flex items-center justify-center space-x-2 w-full py-2.5 px-4 rounded-xl bg-btn hover:bg-btn-hover active:bg-btn-active text-white font-medium text-xs shadow-btn transition"
           >
-            <span>📞 โทรสายด่วน: {{ primaryPhone }}</span>
+            <AppIcon name="phone" class="w-3.5 h-3.5 text-white" />
+            <span>โทรสายด่วน: {{ primaryPhone }}</span>
           </a>
           <a 
             :href="lineUrl" 
@@ -142,7 +145,8 @@ const lineUrl = siteSettings.socialLinks.line;
             rel="noopener noreferrer" 
             class="flex items-center justify-center space-x-2 w-full py-2.5 px-4 rounded-xl bg-line text-white font-medium text-xs shadow-sm hover:bg-line-dark transition"
           >
-            <span>💬 ทักแชท Line @studywiz</span>
+            <AppIcon name="line" class="w-4 h-4 text-white" />
+            <span>ทักแชท Line @studywiz</span>
           </a>
         </div>
       </div>

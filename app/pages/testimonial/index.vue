@@ -50,8 +50,9 @@ useHead({
               <div class="text-xs text-brand-600 font-medium">
                 {{ item.program }}
               </div>
-              <div class="text-[11px] text-slate-400">
-                🏛️ {{ item.institution }}
+              <div class="text-[11px] text-slate-400 flex items-center space-x-1 pt-0.5">
+                <AppIcon name="landmark" class="w-3 h-3 text-slate-400" />
+                <span>{{ item.institution }}</span>
               </div>
             </div>
           </div>
@@ -60,7 +61,9 @@ useHead({
 
       <!-- Trust Banner -->
       <div class="bg-brand-50 border border-brand-100/80 rounded-2xl p-8 text-center max-w-2xl mx-auto space-y-4">
-        <span class="text-3xl">🌟</span>
+        <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-500 flex items-center justify-center mx-auto">
+          <AppIcon name="star" class="w-6 h-6 text-amber-500" />
+        </div>
         <h3 class="text-xl font-bold text-slate-900 font-display">
           พร้อมสร้างเรื่องราวความสำเร็จของคุณแล้วหรือยัง?
         </h3>

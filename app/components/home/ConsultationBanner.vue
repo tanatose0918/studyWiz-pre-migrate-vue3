@@ -15,8 +15,9 @@ const lineUrl = siteSettings.socialLinks.line;
       
       <!-- Text -->
       <div class="space-y-3 text-center lg:text-left max-w-2xl">
-        <span class="inline-block px-3 py-1 rounded-full bg-white/10 text-white text-xs font-semibold uppercase tracking-wider backdrop-blur-sm border border-white/20">
-          ✨ นัดหมายปรึกษาฟรี ไม่มีค่าใช้จ่าย
+        <span class="inline-flex items-center px-3 py-1 rounded-full bg-white/10 text-white text-xs font-semibold uppercase tracking-wider backdrop-blur-sm border border-white/20">
+          <AppIcon name="sparkles" class="w-3.5 h-3.5 text-amber-300 mr-1.5" />
+          <span>นัดหมายปรึกษาฟรี ไม่มีค่าใช้จ่าย</span>
         </span>
         <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold font-display leading-tight text-white">
           พร้อมเริ่มต้นอนาคตการศึกษาในต่างประเทศแล้วหรือยัง?
@@ -34,7 +35,8 @@ const lineUrl = siteSettings.socialLinks.line;
           rel="noopener noreferrer"
           class="px-6 py-3.5 rounded-xl bg-line hover:bg-line-dark text-white font-bold text-sm shadow-xl shadow-black/20 hover:scale-105 transition flex items-center space-x-2"
         >
-          <span>💬 ปรึกษาผ่าน Line @studywiz</span>
+          <AppIcon name="line" class="w-4 h-4 text-white" />
+          <span>ปรึกษาผ่าน Line @studywiz</span>
         </a>
 
         <NuxtLink 

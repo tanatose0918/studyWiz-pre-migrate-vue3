@@ -63,8 +63,12 @@ const filteredCountries = computed(() => {
             />
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent"></div>
             
-            <div class="absolute top-3 left-3 text-3xl drop-shadow-md">
-              {{ country.flag }}
+            <div class="absolute top-3 left-3 w-10 h-7 rounded-md overflow-hidden shadow-md border border-white/50 bg-slate-200">
+              <img 
+                :src="country.flagImage || `/images/flags/${country.slug}.jpg`" 
+                :alt="country.nameEn" 
+                class="w-full h-full object-cover" 
+              />
             </div>
 
             <div class="absolute bottom-3 left-4 right-4 text-white">
@@ -81,7 +85,7 @@ const filteredCountries = computed(() => {
           <div class="p-5 flex flex-col flex-1 justify-between space-y-4">
             <div class="space-y-2">
               <div class="flex items-center space-x-1.5 text-xs text-brand-600 font-semibold">
-                <span>🏛️</span>
+                <AppIcon name="landmark" class="w-3.5 h-3.5 text-brand-600" />
                 <span>เปิดรับกว่า {{ country.institutionsCount }} สถาบัน</span>
               </div>
               <p class="text-xs text-slate-600 leading-relaxed">
@@ -94,7 +98,7 @@ const filteredCountries = computed(() => {
               class="inline-flex items-center justify-between w-full px-3.5 py-2.5 rounded-xl bg-slate-50 group-hover:bg-btn text-slate-700 group-hover:text-white text-xs font-semibold transition-colors duration-200"
             >
               <span>ดูข้อมูลสถาบันและหลักสูตร</span>
-              <span>→</span>
+              <AppIcon name="arrow-right" class="w-3.5 h-3.5" />
             </NuxtLink>
           </div>
         </div>

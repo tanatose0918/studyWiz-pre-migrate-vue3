@@ -60,12 +60,21 @@ const shareOnLine = () => {
         <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 leading-tight font-display">
           {{ post.title }}
         </h1>
-        <div class="flex items-center space-x-4 text-xs text-slate-500 pt-1 border-b border-slate-100 pb-4">
-          <span>🗓️ {{ post.date }}</span>
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-slate-500 pt-1 border-b border-slate-100 pb-4">
+          <span class="inline-flex items-center space-x-1.5">
+            <AppIcon name="calendar" class="w-3.5 h-3.5 text-brand-600" />
+            <span>{{ post.date }}</span>
+          </span>
           <span>•</span>
-          <span>✍️ โดย {{ post.author }}</span>
+          <span class="inline-flex items-center space-x-1.5">
+            <AppIcon name="user" class="w-3.5 h-3.5 text-slate-400" />
+            <span>โดย {{ post.author }}</span>
+          </span>
           <span>•</span>
-          <span>📖 เวลาอ่านประมาณ 3 นาที</span>
+          <span class="inline-flex items-center space-x-1.5">
+            <AppIcon name="book-open" class="w-3.5 h-3.5 text-slate-400" />
+            <span>เวลาอ่านประมาณ 3 นาที</span>
+          </span>
         </div>
       </header>
 
@@ -74,7 +83,7 @@ const shareOnLine = () => {
         <img 
           :src="post.image" 
           :alt="post.title"
-          class="w-full h-full object-cover"
+          class="w-full h-full object-cover" 
         />
       </div>
 
@@ -101,14 +110,14 @@ const shareOnLine = () => {
             @click="shareOnFacebook"
             class="px-4 py-2 rounded-xl bg-blue-600 text-white text-xs font-semibold hover:bg-blue-700 transition flex items-center space-x-1.5"
           >
-            <span>📘</span>
+            <AppIcon name="facebook" class="w-3.5 h-3.5 text-white" />
             <span>Facebook</span>
           </button>
           <button 
             @click="shareOnLine"
             class="px-4 py-2 rounded-xl bg-line text-white text-xs font-semibold hover:bg-line-dark transition flex items-center space-x-1.5"
           >
-            <span>💬</span>
+            <AppIcon name="line" class="w-3.5 h-3.5 text-white" />
             <span>Line</span>
           </button>
         </div>

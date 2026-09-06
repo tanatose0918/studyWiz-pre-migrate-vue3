@@ -35,11 +35,13 @@ const socials = siteSettings.socialLinks;
               สมาชิกสมาคมวิชาชีพ
             </div>
             <div class="flex flex-wrap gap-2">
-              <span class="px-2.5 py-1 rounded bg-slate-800/80 border border-slate-700 text-[11px] text-brand-300 font-medium">
-                🏅 TIECA Member
+              <span class="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded bg-slate-800/80 border border-slate-700 text-[11px] text-brand-300 font-medium">
+                <AppIcon name="award" class="w-3.5 h-3.5 text-brand-300" />
+                <span>TIECA Member</span>
               </span>
-              <span class="px-2.5 py-1 rounded bg-slate-800/80 border border-slate-700 text-[11px] text-brand-300 font-medium">
-                🌍 FELCA Member
+              <span class="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded bg-slate-800/80 border border-slate-700 text-[11px] text-brand-300 font-medium">
+                <AppIcon name="globe" class="w-3.5 h-3.5 text-brand-300" />
+                <span>FELCA Member</span>
               </span>
             </div>
           </div>
@@ -123,7 +125,7 @@ const socials = siteSettings.socialLinks;
           <!-- Bangkok -->
           <div class="bg-slate-800/60 p-3.5 rounded-xl border border-slate-700/60 space-y-1.5 text-xs">
             <div class="font-bold text-slate-100 flex items-center space-x-1.5">
-              <span>🏢</span>
+              <AppIcon name="building" class="w-3.5 h-3.5 text-brand-400" />
               <span>{{ bkk.title }}</span>
             </div>
             <p class="text-slate-400 leading-normal">
@@ -131,14 +133,16 @@ const socials = siteSettings.socialLinks;
             </p>
             <div class="text-[11px] text-slate-300 flex flex-wrap gap-x-3 gap-y-1 pt-1">
               <span v-for="p in bkk.phones" :key="p">
-                <a :href="`tel:${p.replace(/[^\d+]/g, '')}`" class="hover:text-brand-400 transition">
-                  📞 {{ p }}
+                <a :href="`tel:${p.replace(/[^\d+]/g, '')}`" class="inline-flex items-center space-x-1 hover:text-brand-400 transition">
+                  <AppIcon name="phone" class="w-3 h-3 text-brand-400" />
+                  <span>{{ p }}</span>
                 </a>
               </span>
             </div>
             <div class="pt-0.5">
-              <a :href="`mailto:${bkk.email}`" class="text-brand-400 hover:underline">
-                ✉️ {{ bkk.email }}
+              <a :href="`mailto:${bkk.email}`" class="inline-flex items-center space-x-1 text-brand-400 hover:underline">
+                <AppIcon name="mail" class="w-3 h-3 text-brand-400" />
+                <span>{{ bkk.email }}</span>
               </a>
             </div>
           </div>
@@ -146,36 +150,38 @@ const socials = siteSettings.socialLinks;
           <!-- Chiang Mai -->
           <div class="bg-slate-800/60 p-3.5 rounded-xl border border-slate-700/60 space-y-1 text-xs">
             <div class="font-bold text-slate-100 flex items-center space-x-1.5">
-              <span>🏔️</span>
+              <AppIcon name="mountain" class="w-3.5 h-3.5 text-brand-400" />
               <span>{{ cnx.title }}</span>
             </div>
             <div class="text-[11px] text-slate-300 flex items-center space-x-3">
-              <a :href="`tel:${cnx.phones[0].replace(/[^\d+]/g, '')}`" class="hover:text-brand-400 transition">
-                📞 {{ cnx.phones[0] }}
+              <a :href="`tel:${cnx.phones[0].replace(/[^\d+]/g, '')}`" class="inline-flex items-center space-x-1 hover:text-brand-400 transition">
+                <AppIcon name="phone" class="w-3 h-3 text-brand-400" />
+                <span>{{ cnx.phones[0] }}</span>
               </a>
               <span>|</span>
-              <a :href="`mailto:${cnx.email}`" class="text-brand-400 hover:underline">
-                ✉️ {{ cnx.email }}
+              <a :href="`mailto:${cnx.email}`" class="inline-flex items-center space-x-1 text-brand-400 hover:underline">
+                <AppIcon name="mail" class="w-3 h-3 text-brand-400" />
+                <span>{{ cnx.email }}</span>
               </a>
             </div>
           </div>
 
           <!-- Social Icons in Footer -->
           <div class="flex items-center space-x-3 pt-1">
-            <a :href="socials.facebook" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-sm text-slate-300 hover:bg-brand-600 hover:text-white transition">
-              📘
+            <a :href="socials.facebook" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-brand-600 hover:text-white transition" title="Facebook">
+              <AppIcon name="facebook" class="w-4 h-4" />
             </a>
-            <a :href="socials.line" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-sm text-slate-300 hover:bg-line hover:text-white transition">
-              💬
+            <a :href="socials.line" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-line hover:text-white transition" title="LINE">
+              <AppIcon name="line" class="w-4 h-4" />
             </a>
-            <a :href="socials.instagram" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-sm text-slate-300 hover:bg-pink-600 hover:text-white transition">
-              📷
+            <a :href="socials.instagram" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-pink-600 hover:text-white transition" title="Instagram">
+              <AppIcon name="instagram" class="w-4 h-4" />
             </a>
-            <a :href="socials.tiktok" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-sm text-slate-300 hover:bg-cyan-600 hover:text-white transition">
-              🎵
+            <a :href="socials.tiktok" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-cyan-600 hover:text-white transition" title="TikTok">
+              <AppIcon name="tiktok" class="w-4 h-4" />
             </a>
-            <a :href="socials.youtube" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-sm text-slate-300 hover:bg-red-600 hover:text-white transition">
-              ▶️
+            <a :href="socials.youtube" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-red-600 hover:text-white transition" title="YouTube">
+              <AppIcon name="youtube" class="w-4 h-4" />
             </a>
           </div>
 
@@ -191,8 +197,8 @@ const socials = siteSettings.socialLinks;
         <div class="flex items-center space-x-6 text-[11px]">
           <NuxtLink to="/about" class="hover:text-slate-300 transition">นโยบายความเป็นส่วนตัว</NuxtLink>
           <NuxtLink to="/contact" class="hover:text-slate-300 transition">แผนที่และการติดต่อ</NuxtLink>
-          <a href="/admin/" target="_blank" class="text-slate-500 hover:text-slate-300 transition flex items-center space-x-1">
-            <span>⚙️</span>
+          <a href="/admin/" target="_blank" class="text-slate-500 hover:text-slate-300 transition flex items-center space-x-1.5">
+            <AppIcon name="settings" class="w-3 h-3" />
             <span>CMS Backoffice</span>
           </a>
         </div>

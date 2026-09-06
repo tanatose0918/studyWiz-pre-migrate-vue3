@@ -26,14 +26,18 @@ const philosophy = homeData.philosophy;
           <!-- Quick Trust Badges below video -->
           <div class="mt-4 grid grid-cols-2 gap-3">
             <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center space-x-3">
-              <span class="text-2xl">🏛️</span>
+              <div class="w-9 h-9 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center flex-shrink-0">
+                <AppIcon name="award" class="w-5 h-5 text-brand-600" />
+              </div>
               <div>
                 <div class="font-bold text-xs text-slate-800">TIECA Member</div>
                 <div class="text-[10px] text-slate-500">สมาคมไทยแนะแนวการศึกษา</div>
               </div>
             </div>
             <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center space-x-3">
-              <span class="text-2xl">🌐</span>
+              <div class="w-9 h-9 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center flex-shrink-0">
+                <AppIcon name="globe" class="w-5 h-5 text-blue-600" />
+              </div>
               <div>
                 <div class="font-bold text-xs text-slate-800">FELCA Member</div>
                 <div class="text-[10px] text-slate-500">มาตรฐานที่ปรึกษาสากล</div>
@@ -64,8 +68,8 @@ const philosophy = homeData.philosophy;
               :key="idx"
               class="flex items-start space-x-3 text-xs sm:text-sm text-slate-700"
             >
-              <div class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">
-                ✓
+              <div class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <AppIcon name="check" class="w-3 h-3 text-emerald-600" />
               </div>
               <span class="font-medium">{{ item }}</span>
             </div>

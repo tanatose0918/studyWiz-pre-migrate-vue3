@@ -38,10 +38,16 @@ useHead({
 
           <div class="p-6 flex flex-col flex-1 justify-between space-y-4">
             <div class="space-y-2">
-              <div class="text-[11px] font-semibold text-slate-400 flex items-center space-x-2">
-                <span>🗓️ {{ post.date }}</span>
+              <div class="text-[11px] font-semibold text-slate-400 flex items-center space-x-3">
+                <span class="inline-flex items-center space-x-1">
+                  <AppIcon name="calendar" class="w-3 h-3 text-slate-400" />
+                  <span>{{ post.date }}</span>
+                </span>
                 <span>•</span>
-                <span>✍️ {{ post.author }}</span>
+                <span class="inline-flex items-center space-x-1">
+                  <AppIcon name="user" class="w-3 h-3 text-slate-400" />
+                  <span>{{ post.author }}</span>
+                </span>
               </div>
               <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-snug group-hover:text-brand-600 transition-colors line-clamp-2">
                 {{ post.title }}
@@ -56,7 +62,7 @@ useHead({
               class="inline-flex items-center space-x-1.5 text-xs font-semibold text-brand-600 hover:text-brand-800 transition pt-2"
             >
               <span>อ่านต่อฉบับเต็ม</span>
-              <span>→</span>
+              <AppIcon name="arrow-right" class="w-3.5 h-3.5" />
             </NuxtLink>
           </div>
         </article>

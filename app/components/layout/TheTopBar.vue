@@ -15,7 +15,7 @@ const socials = siteSettings.socialLinks;
           :href="`tel:${primaryPhone.replace(/-/g, '')}`" 
           class="flex items-center space-x-1.5 hover:text-white transition group"
         >
-          <span class="text-brand-400 group-hover:scale-110 transition-transform">📞</span>
+          <AppIcon name="phone" class="w-3.5 h-3.5 text-brand-400 group-hover:scale-110 transition-transform" />
           <span class="font-medium text-slate-200">สายด่วน:</span>
           <span>{{ primaryPhone }}</span>
         </a>
@@ -24,7 +24,7 @@ const socials = siteSettings.socialLinks;
           :href="`mailto:${primaryEmail}`" 
           class="hidden sm:flex items-center space-x-1.5 hover:text-white transition group"
         >
-          <span class="text-brand-400 group-hover:scale-110 transition-transform">✉️</span>
+          <AppIcon name="mail" class="w-3.5 h-3.5 text-brand-400 group-hover:scale-110 transition-transform" />
           <span>{{ primaryEmail }}</span>
         </a>
       </div>
@@ -39,7 +39,7 @@ const socials = siteSettings.socialLinks;
             class="hover:text-blue-400 transition p-1"
             title="Facebook Studywiz"
           >
-            <span class="text-sm">📘</span>
+            <AppIcon name="facebook" class="w-3.5 h-3.5" />
           </a>
           <a 
             :href="socials.line" 
@@ -48,7 +48,7 @@ const socials = siteSettings.socialLinks;
             class="hover:text-green-400 transition p-1"
             title="Line Official @studywiz"
           >
-            <span class="text-sm">💬</span>
+            <AppIcon name="line" class="w-3.5 h-3.5" />
           </a>
           <a 
             :href="socials.instagram" 
@@ -57,7 +57,7 @@ const socials = siteSettings.socialLinks;
             class="hover:text-pink-400 transition p-1"
             title="Instagram Studywiz"
           >
-            <span class="text-sm">📷</span>
+            <AppIcon name="instagram" class="w-3.5 h-3.5" />
           </a>
           <a 
             :href="socials.tiktok" 
@@ -66,7 +66,7 @@ const socials = siteSettings.socialLinks;
             class="hover:text-cyan-400 transition p-1"
             title="TikTok Studywiz"
           >
-            <span class="text-sm">🎵</span>
+            <AppIcon name="tiktok" class="w-3.5 h-3.5" />
           </a>
           <a 
             :href="socials.youtube" 
@@ -75,7 +75,7 @@ const socials = siteSettings.socialLinks;
             class="hover:text-red-400 transition p-1"
             title="YouTube Studywiz"
           >
-            <span class="text-sm">▶️</span>
+            <AppIcon name="youtube" class="w-3.5 h-3.5" />
           </a>
         </div>
 

@@ -46,7 +46,7 @@ onUnmounted(() => {
         title="เลื่อนขึ้นบนสุด"
         aria-label="Scroll to top"
       >
-        <span class="text-xs font-bold">▲</span>
+        <AppIcon name="arrow-up" class="w-3.5 h-3.5 text-slate-700" />
       </button>
     </transition>
 
@@ -56,13 +56,13 @@ onUnmounted(() => {
       class="flex items-center space-x-2 bg-btn hover:bg-btn-hover active:bg-btn-active text-white px-3.5 py-2.5 rounded-full shadow-btn hover:shadow-btn-hover transition-all duration-200 group hover:-translate-y-0.5"
       title="โทรปรึกษาด่วน"
     >
-      <span class="text-sm">📞</span>
+      <AppIcon name="phone" class="w-3.5 h-3.5 text-white" />
       <span class="text-xs font-semibold hidden md:inline">โทรด่วน</span>
     </a>
 
     <!-- Main Floating Line Button -->
     <a 
-      :href="lineUrl"
+      :href="lineUrl" 
       target="_blank"
       rel="noopener noreferrer"
       class="relative flex items-center space-x-2 bg-line hover:bg-line-dark text-white px-4 py-3 rounded-full shadow-xl hover:shadow-2xl transition-all duration-200 group hover:scale-105"
@@ -74,7 +74,7 @@ onUnmounted(() => {
         <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-500"></span>
       </span>
 
-      <span class="text-lg">💬</span>
+      <AppIcon name="line" class="w-5 h-5 text-white" />
       <span class="text-xs font-bold tracking-wide">แอด Line ปรึกษาฟรี</span>
     </a>
 

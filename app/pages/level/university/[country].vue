@@ -12,7 +12,8 @@ const countryInfo = computed(() => {
   return destinationsData.countries.find(c => c.slug === countryParam.value) || {
     nameTh: countryParam.value.toUpperCase(),
     nameEn: countryParam.value,
-    flag: '🌍',
+    flag: '',
+    flagImage: '',
     highlight: 'สถาบันการศึกษาระดับอุดมศึกษา'
   };
 });
@@ -42,8 +43,16 @@ useHead({
       </div>
 
       <!-- Header with Flag -->
-      <div class="flex items-center space-x-3 mb-2">
-        <span class="text-4xl">{{ countryInfo.flag }}</span>
+      <div class="flex items-center space-x-3.5 mb-2">
+        <div class="w-12 h-8 rounded-lg overflow-hidden shadow-sm border border-slate-200 bg-slate-100 flex-shrink-0">
+          <img 
+            v-if="countryInfo.flagImage || countryInfo.slug" 
+            :src="countryInfo.flagImage || `/images/flags/${countryInfo.slug}.jpg`" 
+            :alt="countryInfo.nameEn" 
+            class="w-full h-full object-cover" 
+          />
+          <AppIcon v-else name="globe" class="w-full h-full p-1 text-slate-500" />
+        </div>
         <div>
           <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Higher Education</span>
           <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 font-display">
@@ -65,8 +74,9 @@ useHead({
           <div class="relative h-52 overflow-hidden bg-slate-100">
             <img :src="uni.image" :alt="uni.nameTh" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute top-3 left-3">
-              <span class="px-3 py-1 rounded-full bg-slate-900/80 text-white text-[11px] font-semibold backdrop-blur-sm">
-                📍 {{ uni.city }}, {{ uni.country }}
+              <span class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-slate-900/80 text-white text-[11px] font-semibold backdrop-blur-sm">
+                <AppIcon name="map-pin" class="w-3 h-3 text-red-400" />
+                <span>{{ uni.city }}, {{ uni.country }}</span>
               </span>
             </div>
           </div>
@@ -88,9 +98,10 @@ useHead({
                 <span 
                   v-for="(prog, idx) in uni.programs" 
                   :key="idx"
-                  class="px-2 py-0.5 rounded bg-brand-50 text-brand-700 text-[10px] font-semibold"
+                  class="inline-flex items-center space-x-1 px-2 py-0.5 rounded bg-brand-50 text-brand-700 text-[10px] font-semibold"
                 >
-                  🎓 {{ prog }}
+                  <AppIcon name="graduation-cap" class="w-3 h-3" />
+                  <span>{{ prog }}</span>
                 </span>
               </div>
             </div>
@@ -98,10 +109,10 @@ useHead({
             <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
               <NuxtLink 
                 to="/contact" 
-                class="inline-flex items-center space-x-1 text-xs font-bold text-brand-600 hover:text-brand-800"
+                class="inline-flex items-center space-x-1.5 text-xs font-bold text-brand-600 hover:text-brand-800"
               >
                 <span>สอบถามเกณฑ์รับสมัคร & ทุน</span>
-                <span>→</span>
+                <AppIcon name="arrow-right" class="w-3.5 h-3.5" />
               </NuxtLink>
             </div>
           </div>
@@ -110,7 +121,9 @@ useHead({
 
       <!-- If none found in sample list, show general advisory -->
       <div v-else class="p-12 text-center bg-white rounded-2xl border border-slate-200 space-y-4 mb-12">
-        <span class="text-4xl">🎓</span>
+        <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mx-auto">
+          <AppIcon name="graduation-cap" class="w-7 h-7 text-brand-600" />
+        </div>
         <h3 class="text-lg font-bold text-slate-800">กำลังอัปเดตรายชื่อสถาบันเพิ่มเติมใน{{ countryInfo.nameTh }}</h3>
         <p class="text-xs text-slate-500 max-w-md mx-auto">
           Studywiz มีพันธมิตรมหาวิทยาลัยใน{{ countryInfo.nameTh }}หลากหลายแห่ง สามารถติดต่อเจ้าหน้าที่เพื่อขอรายชื่อหลักสูตรทั้งหมดได้ทันที

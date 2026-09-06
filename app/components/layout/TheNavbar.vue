@@ -59,7 +59,7 @@ const navLinks = [
               active-class="text-brand-600 bg-brand-50/60 font-semibold"
             >
               <span>{{ item.name }}</span>
-              <span class="text-[10px] text-slate-400">▼</span>
+              <AppIcon name="chevron-down" class="w-3 h-3 text-slate-400" />
             </NuxtLink>
 
             <!-- Dropdown Menu -->
@@ -106,20 +106,20 @@ const navLinks = [
       <div class="flex items-center space-x-3">
         <NuxtLink 
           to="/contact" 
-          class="hidden sm:inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-btn hover:bg-btn-hover active:bg-btn-active text-white text-xs font-semibold shadow-btn hover:shadow-btn-hover transition-all"
+          class="hidden sm:inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-btn hover:bg-btn-hover active:bg-btn-active text-white text-xs font-semibold shadow-btn hover:shadow-btn-hover transition-all space-x-1.5"
         >
           <span>ปรึกษาเรียนต่อฟรี</span>
-          <span class="ml-1.5 font-sans">→</span>
+          <AppIcon name="arrow-right" class="w-3.5 h-3.5" />
         </NuxtLink>
 
         <!-- Mobile Hamburger Button -->
         <button 
           @click="emit('toggleDrawer')" 
           type="button" 
-          class="lg:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none transition"
+          class="lg:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none transition flex items-center justify-center"
           aria-label="Toggle menu"
         >
-          <span class="text-xl">☰</span>
+          <AppIcon name="menu" class="w-5 h-5" />
         </button>
       </div>
 

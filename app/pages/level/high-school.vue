@@ -41,8 +41,9 @@ const highSchools = institutions.filter(i => i.level === 'highschool');
           <div class="relative h-52 overflow-hidden bg-slate-100">
             <img :src="school.image" :alt="school.nameTh" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute top-3 left-3">
-              <span class="px-3 py-1 rounded-full bg-slate-900/80 text-white text-[11px] font-semibold backdrop-blur-sm">
-                📍 {{ school.city }}, {{ school.country }}
+              <span class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-slate-900/80 text-white text-[11px] font-semibold backdrop-blur-sm">
+                <AppIcon name="map-pin" class="w-3 h-3 text-red-400" />
+                <span>{{ school.city }}, {{ school.country }}</span>
               </span>
             </div>
           </div>
@@ -63,10 +64,10 @@ const highSchools = institutions.filter(i => i.level === 'highschool');
             <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
               <NuxtLink 
                 to="/contact" 
-                class="inline-flex items-center space-x-1 text-xs font-bold text-brand-600 hover:text-brand-800"
+                class="inline-flex items-center space-x-1.5 text-xs font-bold text-brand-600 hover:text-brand-800"
               >
                 <span>ขอข้อมูลและค่าใช้จ่าย</span>
-                <span>→</span>
+                <AppIcon name="arrow-right" class="w-3.5 h-3.5" />
               </NuxtLink>
             </div>
           </div>

@@ -81,8 +81,8 @@ const handleSubmit = async () => {
         <div class="lg:col-span-7 bg-white rounded-3xl p-7 sm:p-9 border border-slate-200/90 shadow-sm flex flex-col justify-between space-y-6">
           <div class="space-y-4">
             <div class="flex items-center space-x-3">
-              <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl font-bold">
-                🏢
+              <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center">
+                <AppIcon name="building" class="w-5 h-5 text-brand-600" />
               </div>
               <div>
                 <h3 class="font-bold text-xl text-slate-900 font-display">
@@ -92,9 +92,10 @@ const handleSubmit = async () => {
               </div>
             </div>
 
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              📍 {{ bkk.address }}
-            </p>
+            <div class="flex items-start space-x-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <AppIcon name="map-pin" class="w-4 h-4 text-brand-600 shrink-0 mt-0.5" />
+              <span>{{ bkk.address }}</span>
+            </div>
 
             <div class="space-y-2 pt-2">
               <div class="text-xs font-semibold text-slate-700">เบอร์โทรศัพท์สายด่วน:</div>
@@ -105,16 +106,17 @@ const handleSubmit = async () => {
                   :href="`tel:${p.replace(/[^\d+]/g, '')}`"
                   class="p-2.5 rounded-xl bg-slate-50 hover:bg-brand-50 hover:text-brand-600 text-xs font-semibold text-slate-700 border border-slate-100 flex items-center space-x-2 transition"
                 >
-                  <span>📞</span>
+                  <AppIcon name="phone" class="w-3.5 h-3.5 text-brand-600" />
                   <span>{{ p }}</span>
                 </a>
               </div>
             </div>
 
-            <div class="pt-2">
+            <div class="pt-2 flex items-center space-x-2">
               <span class="text-xs font-semibold text-slate-700">อีเมลแผนกกลาง: </span>
-              <a :href="`mailto:${bkk.email}`" class="text-xs font-bold text-brand-600 hover:underline">
-                {{ bkk.email }}
+              <a :href="`mailto:${bkk.email}`" class="inline-flex items-center space-x-1 text-xs font-bold text-brand-600 hover:underline">
+                <AppIcon name="mail" class="w-3.5 h-3.5 text-brand-600" />
+                <span>{{ bkk.email }}</span>
               </a>
             </div>
           </div>
@@ -137,8 +139,8 @@ const handleSubmit = async () => {
           <!-- Chiang Mai Card -->
           <div class="bg-white rounded-3xl p-7 border border-slate-200/90 shadow-sm space-y-4">
             <div class="flex items-center space-x-3">
-              <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl font-bold">
-                🏔️
+              <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
+                <AppIcon name="mountain" class="w-5 h-5 text-emerald-600" />
               </div>
               <div>
                 <h3 class="font-bold text-lg text-slate-900 font-display">
@@ -151,23 +153,27 @@ const handleSubmit = async () => {
             <div class="space-y-2 text-xs text-slate-600">
               <a 
                 :href="`tel:${cnx.phones[0].replace(/[^\d+]/g, '')}`"
-                class="block p-2.5 rounded-xl bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 font-semibold border border-slate-100 transition"
+                class="flex items-center space-x-2 p-2.5 rounded-xl bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 font-semibold border border-slate-100 transition"
               >
-                📞 เบอร์โทรศัพท์: {{ cnx.phones[0] }}
+                <AppIcon name="phone" class="w-3.5 h-3.5 text-emerald-600" />
+                <span>เบอร์โทรศัพท์: {{ cnx.phones[0] }}</span>
               </a>
               <a 
                 :href="`mailto:${cnx.email}`"
-                class="block p-2.5 rounded-xl bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 font-semibold border border-slate-100 transition"
+                class="flex items-center space-x-2 p-2.5 rounded-xl bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 font-semibold border border-slate-100 transition"
               >
-                ✉️ อีเมล: {{ cnx.email }}
+                <AppIcon name="mail" class="w-3.5 h-3.5 text-emerald-600" />
+                <span>อีเมล: {{ cnx.email }}</span>
               </a>
             </div>
           </div>
 
           <!-- Line OpenChat Communities -->
           <div class="bg-gradient-to-br from-emerald-50 to-teal-50/50 rounded-3xl p-7 border border-emerald-100 space-y-4">
-            <div class="flex items-center space-x-2">
-              <span class="text-2xl">💬</span>
+            <div class="flex items-center space-x-2.5">
+              <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+                <AppIcon name="line" class="w-4 h-4" />
+              </div>
               <h3 class="font-bold text-base text-slate-900 font-display">
                 เข้าร่วมกลุ่มพูดคุย Line OpenChat
               </h3>
@@ -220,7 +226,7 @@ const handleSubmit = async () => {
           v-if="submitSuccess" 
           class="p-4 mb-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs sm:text-sm flex items-start space-x-3"
         >
-          <span class="text-xl">✅</span>
+          <AppIcon name="check-circle" class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
           <div class="leading-relaxed">
             <strong>ส่งข้อความสำเร็จแล้ว!</strong> เจ้าหน้าที่ Studywiz ได้รับข้อมูลเรียบร้อยแล้ว และจะติดต่อกลับท่านโดยเร็วที่สุดครับ
           </div>
@@ -231,7 +237,7 @@ const handleSubmit = async () => {
           v-if="errorMessage" 
           class="p-4 mb-6 rounded-2xl bg-red-50 border border-red-200 text-red-800 text-xs flex items-start space-x-2"
         >
-          <span>⚠️</span>
+          <AppIcon name="alert-triangle" class="w-4 h-4 text-red-600 shrink-0 mt-0.5" />
           <span>{{ errorMessage }}</span>
         </div>
 
@@ -332,8 +338,10 @@ const handleSubmit = async () => {
             class="w-full py-3.5 px-6 rounded-xl bg-btn hover:bg-btn-hover active:bg-btn-active text-white font-bold text-sm shadow-btn hover:shadow-btn-hover transition flex items-center justify-center space-x-2 disabled:opacity-60"
           >
             <span v-if="isSubmitting">กำลังส่งข้อความ...</span>
-            <span v-else>ส่งข้อความปรึกษาฟรี</span>
-            <span v-if="!isSubmitting">✉️</span>
+            <span v-else class="inline-flex items-center space-x-1.5">
+              <span>ส่งข้อความปรึกษาฟรี</span>
+              <AppIcon name="send" class="w-4 h-4 ml-1" />
+            </span>
           </button>
         </form>
       </div>

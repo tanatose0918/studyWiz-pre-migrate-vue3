@@ -10,32 +10,32 @@ useHead({
 
 const services = [
   {
-    icon: '🎯',
+    icon: 'target',
     title: 'แนะแนวเลือกหลักสูตรที่เหมาะสม',
     desc: 'ประเมินความสนใจ ความถนัด และงบประมาณ เพื่อแนะนำประเทศและมหาวิทยาลัยที่คุ้มค่าที่สุด'
   },
   {
-    icon: '📑',
+    icon: 'file-text',
     title: 'ดูแลการสมัครเรียนทุกขั้นตอน',
     desc: 'ช่วยตรวจทานเอกสาร Portfolio, SOP และประสานงานส่งใบสมัครโดยตรงกับฝ่ายรับสมัครของสถาบัน'
   },
   {
-    icon: '🛂',
+    icon: 'shield-check',
     title: 'บริการยื่นวีซ่านักเรียนครบวงจร',
     desc: 'ให้คำแนะนำการเตรียมหลักฐานทางการเงิน ซักซ้อมสัมภาษณ์วีซ่า เพื่อให้อัตราผ่านสูงสุด'
   },
   {
-    icon: '🏡',
+    icon: 'home',
     title: 'ประสานงานที่พักและการเดินทาง',
     desc: 'จัดหาหอพักในมหาวิทยาลัย โฮสต์แฟมิลี่ที่ปลอดภัย ตั๋วเครื่องบิน และบริการรถรับส่งจากสนามบิน'
   },
   {
-    icon: '🤝',
+    icon: 'handshake',
     title: 'ดูแลและติดตามผลตลอดการศึกษา',
     desc: 'คอยเป็นที่ปรึกษาเมื่อมีปัญหาทั้งเรื่องการเรียน การปรับตัว และความช่วยเหลือฉุกเฉินตลอดเวลาที่อยู่ต่างแดน'
   },
   {
-    icon: '💰',
+    icon: 'coins',
     title: 'ให้คำปรึกษาฟรี ไม่มีค่าบริการ',
     desc: 'Studywiz ได้รับการสนับสนุนจากสถาบันการศึกษาพันธมิตร จึงไม่มีการเก็บค่าธรรมเนียมแนะแนวจากนักเรียน'
   }
@@ -72,7 +72,9 @@ const services = [
 
         <div class="lg:col-span-5 space-y-4">
           <div class="p-6 rounded-2xl bg-brand-50 border border-brand-100 space-y-3">
-            <div class="text-3xl">🏅</div>
+            <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center">
+              <AppIcon name="award" class="w-6 h-6 text-brand-600" />
+            </div>
             <h4 class="font-bold text-slate-900 text-base">TIECA Accredited</h4>
             <p class="text-xs text-slate-600 leading-normal">
               ได้รับการรับรองจากสมาคมไทยแนะแนวการศึกษานานาชาติ ปฏิบัติตามมาตรฐานการให้คำปรึกษาที่ถูกต้องตามกฎหมายและจรรยาบรรณวิชาชีพ
@@ -80,7 +82,9 @@ const services = [
           </div>
 
           <div class="p-6 rounded-2xl bg-indigo-50 border border-indigo-100 space-y-3">
-            <div class="text-3xl">🌍</div>
+            <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center">
+              <AppIcon name="globe" class="w-6 h-6 text-indigo-600" />
+            </div>
             <h4 class="font-bold text-slate-900 text-base">FELCA Global Standards</h4>
             <p class="text-xs text-slate-600 leading-normal">
               เชื่อมโยงกับเครือข่ายสมาคมที่ปรึกษาการศึกษาจากทั่วโลก มั่นใจได้ในความสัมพันธ์โดยตรงกับมหาวิทยาลัยชั้นนำ
@@ -100,7 +104,9 @@ const services = [
             :key="idx"
             class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition space-y-3"
           >
-            <div class="text-3xl">{{ s.icon }}</div>
+            <div class="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-2">
+              <AppIcon :name="s.icon" class="w-6 h-6" />
+            </div>
             <h4 class="font-bold text-slate-900 text-base font-display">{{ s.title }}</h4>
             <p class="text-xs text-slate-600 leading-relaxed">{{ s.desc }}</p>
           </div>
