@@ -1,98 +1,95 @@
-# ใบเสนอราคาและขอบเขตงาน (Project Quotation & Scope of Work)
-**โครงการ:** พัฒนาระบบเว็บไซต์และระบบจัดการข้อมูล StudyWiz (Web Modernization & CMS Dashboard)  
+# ใบเสนอราคาและขอบเขตโครงการ (Project Quotation & Service Agreement)
+**โครงการ:** Replatforming เว็บไซต์สู่ Nuxt 3 และพัฒนาระบบ StudyWiz CMS Dashboard  
 **ผู้จัดทำ:** Tor (Freelance Software Engineer)  
 **ลูกค้า/ผู้ว่าจ้าง:** StudyWiz  
 **วันที่ออกเอกสาร:** 6 กันยายน 2026  
-**สถานะ:** ฉบับร่างสำหรับประเมินราคาและวางแผนโครงการ (Preliminary Quotation)  
+**สถานะ:** เอกสารข้อเสนอราคาและแผนการดำเนินงาน (Official Proposal)  
 
 ---
 
-## 1. สรุปภาพรวมโครงการ (Project Executive Summary)
+## 1. วัตถุประสงค์และภาพรวมโครงการ (Project Objectives)
 
-โครงการแบ่งการดำเนินงานออกเป็น **2 เฟส (Phases)** เพื่อให้ระบบทยอยขึ้นใช้งานได้เร็ว ลดความเสี่ยง และง่ายต่อการส่งมอบ:
-1. **Phase 1 (ปัจจุบัน):** Replatforming & Frontend Modernization — ปรับปรุงสถาปัตยกรรมเว็บไซต์ใหม่ทั้งหมดจาก WordPress เดิม สู่ **Nuxt 3 (Vue 3) + Tailwind CSS** เพิ่มความเร็วระดับ Sub-second โหลดไว SEO เยี่ยม และรองรับ Mobile Responsive 100%
-2. **Phase 2 (ส่วนต่อขยาย):** StudyWiz CMS & Backoffice Dashboard — ระบบหลังบ้านสำหรับแอดมิน จัดการบทความ ประเทศ/คอร์สเรียน ข้อมูลรีวิว และระบบรับ Lead ผู้สมัครเรียน/นัดหมายปรึกษา
+ยกระดับเว็บไซต์เดิม (Legacy WordPress) สู่สถาปัตยกรรมเว็บสมัยใหม่ **Nuxt 3 (Vue 3) + Tailwind CSS** เพื่อเพิ่มความเร็วสูงสุด (Sub-second loading) รองรับผู้ใช้งานจากทุกอุปกรณ์ (Mobile-first Responsive 100%) และสร้างระบบบริหารจัดการเนื้อหาหลังบ้าน (Custom CMS Dashboard) ที่มี Data Pipeline เชื่อมโยงข้อมูลแบบ Dynamic ไปยังหน้าเว็บโดยตรง ไม่ต้องเสียค่าธรรมเนียม Plugin รายเดือน/รายปี และพร้อมรับการใช้งานตลอดปี 2026
 
----
-
-## 2. ขอบเขตงานและรายละเอียดส่งมอบ (Scope of Deliverables)
-
-### 📌 Phase 1: Replatforming & Frontend Modernization (Nuxt 3 + Vue 3)
-*เป้าหมาย: ได้เว็บไซต์หน้าบ้านที่เร็วทันสมัย ดีไซน์พรีเมียม สถาปัตยกรรมพร้อมต่อยอด*
-
-| ลำดับ | รายการงาน (Deliverables) | รายละเอียดทางเทคนิค | ระยะเวลาประเมิน (Man-Days) |
-|---|---|---|:---:|
-| 1.1 | **System Architecture & Design System** | Setup Nuxt 3, Vue 3, Tailwind CSS, Color Palette (Theme StudyWiz), Custom Typography, Responsive Layouts (Desktop/Tablet/Mobile) | 3 วัน |
-| 1.2 | **Icon System & Asset Engine** | พัฒนาระบบ `AppIcon.vue` เวกเตอร์ SVG ในตัว (Zero-CDN) ไม่ต้องพึ่งภายนอก, Custom Favicon, Asset pipeline | 1.5 วัน |
-| 1.3 | **Data Scrape & Structure Migration** | ดึงข้อมูลเดิมจาก WordPress (16 ประเทศปลายทาง, คอร์สเรียน, บทความ, รีวิว, รายชื่อวิทยาเขต) จัดโครงสร้าง JSON รองรับ CMS ในอนาคต | 2.5 วัน |
-| 1.4 | **Core Pages Development (10+ หน้า)** | พัฒนาหน้า Home, Country (รายชื่อ + หน้ารายละเอียดประเทศ), Level (มัธยม/มหาวิทยาลัย), About, Blog, Activities, Testimonial, Contact | 6 วัน |
-| 1.5 | **Interactive UX & Conversion Features** | Floating Contact SpeedDial (LINE/Call/Facebook/Email), ฟอร์มลงทะเบียนรับคำปรึกษา, ระบบกรอง/ค้นหาข้อมูล | 2 วัน |
-| 1.6 | **SEO, Performance & Deployment** | Static Site Generation (SSG/SSR), Meta Tags, Social OpenGraph, Performance Audit (Lighthouse score 90+) | 1 วัน |
-| | **รวมระยะเวลา Phase 1** | | **16 วันทำ (Man-Days)** |
+โครงการแบ่งการดำเนินงานและส่งมอบออกเป็น **2 เฟสหลัก (Two-Phase Milestone)**:
 
 ---
 
-### 📌 Phase 2: StudyWiz CMS & Admin Dashboard (Backoffice System)
-*เป้าหมาย: ทีมงาน StudyWiz จัดการเนื้อหา อัปเดตรูปภาพ และดูรายชื่อ Lead ได้เองโดยไม่ต้องแก้โค้ด*
+## 2. ขอบเขตงานและรายการส่งมอบ (Scope of Deliverables)
 
-| ลำดับ | รายการงาน (Deliverables) | รายละเอียดทางเทคนิค | ระยะเวลาประเมิน (Man-Days) |
-|---|---|---|:---:|
-| 2.1 | **Admin Architecture & Authentication** | ออกแบบฐานข้อมูล/Headless Engine, ระบบล็อกอินแอดมิน, Role & Permission (Admin / Editor) | 3 วัน |
-| 2.2 | **Content Management Modules** | หน้าจัดการข้อมูล (CRUD):<br>• จัดการประเทศและคอร์สเรียน (Destinations & Programs)<br>• จัดการบล็อก/บทความ (Rich-Text Editor + Categories)<br>• จัดการรูปกิจกรรม & รีวิวศิษย์เก่า (Testimonials) | 5 วัน |
-| 2.3 | **Media & Asset Management** | ระบบอัปโหลดรูปภาพ จัดเก็บไฟล์ พร้อมระบบบีบอัดภาพอัตโนมัติ (WebP Converter) | 2 วัน |
-| 2.4 | **Lead Management & Instant Alerts** | หน้ารายการผู้ลงทะเบียนขอรับคำปรึกษา (Export Excel/CSV ได้) พร้อมระบบแจ้งเตือนเข้า LINE Notify หรือ Email ทันทีที่มีคนกรอกฟอร์ม | 2.5 วัน |
-| 2.5 | **Testing, Deployment & User Manual** | ติดตั้งระบบบน Production Server พร้อมทำเอกสารคู่มือการใช้งาน 1 ชุด และเทรนนิ่งทีมงาน 1 ครั้ง | 1.5 วัน |
-| | **รวมระยะเวลา Phase 2** | | **14 วันทำ (Man-Days)** |
+### 📌 Phase 1: Replatforming & Frontend Modernization (หน้าบ้านประสิทธิภาพสูง)
+*เป้าหมาย: นำข้อมูลและฟีเจอร์เดิมจาก WordPress ทั้งหมด ขึ้นระบบหน้าเว็บใหม่ทันทีด้วยโครงสร้างที่เร็วกว่าเดิม 10 เท่า*
 
----
-
-## 3. หลักการคิดราคาอย่างโปร่งใส (Transparent Pricing Formula)
-
-ที่มาของราคาอ้างอิงจากหลักการคำนวณ **Cost = (Effort in Man-Days × Base Daily Rate) + Deliverable Value + Warranty Buffer**:
-
-```
-1. ฐานราคาต่อวัน (Base Daily Rate): 
-   - เรตตลาด Freelance Senior Frontend / Full-Stack Developer ในไทย: 2,500 – 4,000 บาท/วัน
-   - เรตโครงการนี้คิดที่: 2,500 บาท / Man-Day (ราคาพิเศษสำหรับพันธมิตรระยะยาว)
-
-2. ค่าความซับซ้อนสถาปัตยกรรม (System Architecture & Modern Stack):
-   - ไม่ใช้เว็บสำเร็จรูป แต่เป็น Modern SPA/SSG (Nuxt 3) มี Source Code สะอาด ไม่ติด Vendor Lock-in สามารถส่งต่อหรือสเกลต่อได้ตลอด
-
-3. การรับประกันและดูแลหลังส่งมอบ (Bug Warranty):
-   - รวมการดูแลแก้บั๊กฟรี 30 วันหลังวันขึ้นระบบจริง (Go-Live)
-```
+1. **สถาปัตยกรรมและดีไซน์ (Design & Architecture):**
+   - พัฒนาด้วย Nuxt 3 + Vue 3 และ Tailwind CSS
+   - ปรับแต่ง Color Theme ประจำแบรนด์ StudyWiz (เขียว-ส้ม-เทา) และฟอนต์ภาษาไทย/อังกฤษที่อ่านง่าย สวยงาม
+   - รองรับ Responsive เต็มรูปแบบ (Mobile, Tablet, Desktop)
+2. **ระบบไอคอนเวกเตอร์เฉพาะ (Custom SVG Icon System):**
+   - ระบบ `AppIcon` เวกเตอร์ฝังในตัว ไม่ต้องโหลด CDN ภายนอก (Zero-CDN) ไอคอนติดทันที ไม่มีกระพริบ
+   - ปรับใช้ Favicon โลโก้ทางการของ StudyWiz บน Browser Tab
+3. **การจัดระเบียบข้อมูลเดิม (Structured Data Migration):**
+   - ดึงและจัดโครงสร้างข้อมูล 16 ประเทศปลายทางยอดนิยม พร้อมรูปธงชาติทางการ เรียงลำดับ A–Z
+   - ย้ายเนื้อหาหลัก: หน้าแรก (Home), รายละเอียดประเทศ (Country/Region), ระดับการศึกษา (High School / University), กิจกรรม (Activities), บล็อก (Blog), รีวิวศิษย์เก่า (Testimonials), เกี่ยวกับเรา (About) และติดต่อเรา (Contact)
+4. **เครื่องมือเพิ่มยอดผู้ติดต่อ (Conversion Boosters):**
+   - Floating Contact SpeedDial ปุ่มติดต่อด่วน (LINE Official, Facebook, เบอร์โทร, แผนที่)
+   - ฟอร์มลงทะเบียนขอรับคำปรึกษาเบื้องต้น
 
 ---
 
-## 4. สรุปตารางราคา (Price Breakdown)
+### 📌 Phase 2: Custom CMS & Data Pipeline Dashboard (ระบบหลังบ้านและไปป์ไลน์ข้อมูล)
+*เป้าหมาย: ทีมงานจัดการข้อมูลหน้าเว็บได้เอง มี Data Pipeline เชื่อมต่อแบบ Dynamic และรับแจ้งเตือนผู้ติดต่อทันที*
 
-| ลำดับรายการ | ปริมาณงาน (Man-Days) | อัตราต่อหน่วย (บาท) | จำนวนเงิน (บาท) |
-|---|:---:|:---:|:---:|
-| **Phase 1: Web Modernization (Nuxt 3 Frontend)** | 16 | 2,500 | 40,000 |
-| **Phase 2: StudyWiz CMS & Backoffice Dashboard** | 14 | 2,500 | 35,000 |
-| **รวมราคาปกติ (Subtotal)** | **30 วัน** | | **75,000** |
-| **ส่วนลดพิเศษกรณีว่าจ้างแพ็กเกจรวม (Bundle Discount)** | - | - | **-10,000** |
-| <br>**ยอดรวมสุทธิทั้งโครงการ (Net Total)** | | | <br>**65,000 บาท** |
-
-> *(หมายเหตุ: หากผู้ว่าจ้างเลือกทำเฉพาะ Phase 1 ก่อน ยอดจะอยู่ที่ **40,000 บาท**)*
-
----
-
-## 5. งวดการชำระเงิน (Payment Milestones)
-
-กรณีแบ่งทำสัญญาหรือแพ็กเกจรวม 2 เฟส:
-
-| งวดที่ | เงื่อนไขการชำระ | สัดส่วน (%) | ยอดเงิน (บาท) |
-|:---:|---|:---:|:---:|
-| **งวดที่ 1** | ชำระเมื่อตกลงเซ็นสัญญาว่าจ้าง (มัดจำเริ่มต้นโครงการ) | 30% | 19,500 |
-| **งวดที่ 2** | ชำระเมื่อส่งมอบงาน Phase 1 (เว็บไซต์ Nuxt 3 ขึ้นแสดงผลครบถ้วนและตรวจรับ) | 40% | 26,000 |
-| **งวดที่ 3** | ชำระเมื่องาน Phase 2 แล้วเสร็จ (ระบบ CMS แอดมินทดสอบสมบูรณ์ และ Deploy ขึ้น Production) | 30% | 19,500 |
-| | **รวมทั้งสิ้น** | **100%** | **65,000** |
+1. **Custom System Edition Endpoint Service (Data Pipeline):**
+   - เชื่อมต่อระบบหลังบ้านสู่หน้าบ้านด้วย Dynamic Data Flow เพื่อให้การเพิ่ม/แก้ไขข้อมูลแสดงผลบนหน้าเว็บโดยอัตโนมัติ
+   - โครงสร้างปลอดภัย ไม่มีช่องโหว่แบบ CMS ทั่วไป ไม่เสี่ยงต่อการถูกเจาะระบบ
+2. **โมดูลจัดการเนื้อหาหลังบ้าน (CMS Modules):**
+   - **Destinations & Courses:** จัดการประเทศ วิทยาเขต และคอร์สเรียน
+   - **Articles & Blogs:** เขียนและจัดหน้าบทความด้วย Rich-Text Editor แยกหมวดหมู่ชัดเจน
+   - **Testimonials & Media:** อัปเดตรีวิวศิษย์เก่าและรูปภาพกิจกรรม
+   - **Media Manager:** อัปโหลดและจัดระเบียบไฟล์ภาพ พร้อมบีบอัดอัตโนมัติ
+3. **ระบบรับข้อมูลผู้สนใจเรียน (Lead Ingestion & Alert Service):**
+   - รวบรวมรายชื่อผู้กรอกฟอร์มนัดหมายปรึกษา
+   - ส่งสัญญาณแจ้งเตือนอัตโนมัติ (Instant Alert เช่น Email / LINE Notify) เพื่อให้ทีมงานติดต่อกลับได้ทันท่วงที
+4. **Hands-on Manual Paper (เอกสารคู่มือการใช้งาน):**
+   - จัดทำคู่มือแนะนำขั้นตอนการใช้งานระบบ CMS สำหรับทีมงานแบบอ่านเข้าใจง่าย ทำตามได้จริง 1 ชุด
 
 ---
 
-## 6. สิ่งที่ลูกค้านำไปใช้ต่อได้ (What Client Receives)
-1. **Full Source Code Ownership:** มอบ Source Code ทั้งหมดผ่าน GitHub Repository ของผู้ว่าจ้าง
-2. **High-Performance Web Asset:** เว็บไซต์ที่ได้คะแนน Google Core Web Vitals สูง โหลดเร็ว ไม่หน่วง ไม่เปลืองทรัพยากร Server
-3. **No Recurring CMS License Fees:** ไม่เสียค่า Plugin รายเดือน/รายปีแบบระบบเก่า
-4. **Maintenance & Warranty:** บริการแก้ไขปัญหาทางเทคนิคหรือข้อผิดพลาดของระบบ (Defects/Bugs) ฟรี 30 วันหลังวันส่งมอบงาน
+## 3. ตารางราคาและเงื่อนไขส่วนลดพิเศษ (Pricing & Partner Offer)
+
+ราคามาตรฐานประเมินตามเนื้องานจริงของทั้ง 2 เฟส รวมฟีเจอร์ระดับ Custom System Edition:
+
+| ลำดับรายการ | ขอบเขตงาน | มูลค่างานปกติ (บาท) |
+|---|---|:---:|
+| **Phase 1** | Frontend Replatforming & Core Web System (ระบบและฟีเจอร์เดิมทั้งหมดในมาตรฐานใหม่) | 12,000 |
+| **Phase 2** | Custom CMS Dashboard + Dynamic Data Pipeline + Lead Alert + Hands-on Manual Paper | 18,000 |
+| **มูลค่ารวมปกติ (Standard Quotation)** | | **30,000** |
+| **ส่วนลดความร่วมมือพันธมิตรพิเศษ (Partner Deal Discount)** | มอบส่วนลดพิเศษเพื่อสนับสนุนการดำเนินงานของ StudyWiz | **-6,000** |
+| <br>**ยอดรวมสุทธิทั้งโครงการ (Net Package Price)** | | <br>**24,000 บาท** |
+
+> **สรุปสัดส่วนมูลค่างานจริงหลังหักส่วนลด:**
+> - **Phase 1 (หน้าเว็บเดิมขึ้นระบบใหม่):** **10,000 บาท**
+> - **Phase 2 (ระบบ CMS + Data Pipeline + คู่มือ):** **14,000 บาท**
+
+---
+
+## 4. แผนการชำระเงินแบบแบ่งจ่าย 2 เดือน (Flexible 2-Month Payment Plan)
+
+เพื่อความคล่องตัวทางการเงินของลูกค้า สามารถแบ่งชำระออกเป็น **2 งวด (2 เดือน)** ตามรอบการส่งมอบงาน:
+
+| งวดที่ | กำหนดการชำระ | รายละเอียดการส่งมอบงาน | ยอดชำระ (บาท) |
+|:---:|---|---|:---:|
+| **งวดที่ 1 (เดือนที่ 1)** | เมื่อส่งมอบงาน Phase 1 | เว็บไซต์หน้าบ้าน Nuxt 3 ขึ้นแสดงผลครบถ้วนตามฟังก์ชันเดิม ตรวจรับความเรียบร้อยและเปิดใช้งานได้ | **12,000 บาท**<br>*(หรือ 10,000 บาทตามข้อตกลง)* |
+| **งวดที่ 2 (เดือนที่ 2)** | เมื่อส่งมอบงาน Phase 2 | ระบบ CMS Dashboard เชื่อมต่อ Data Pipeline สมบูรณ์, ทดสอบระบบแจ้งเตือน Lead, ส่งมอบคู่มือ Manual Paper และขึ้น Production | **12,000 บาท**<br>*(หรือ 14,000 บาทตามข้อตกลง)* |
+| | **รวมยอดชำระทั้งสิ้น** | | **24,000 บาท** |
+
+---
+
+## 5. การรับประกันและขอบเขตบริการเสริมในอนาคต (Warranty & Maintenance Scope)
+
+1. **การรับประกันระบบ (Free Warranty 30 วัน):**
+   - ดูแลแก้ไขปัญหาทางเทคนิคและข้อบกพร่องของระบบ (Bugs / Technical Glitches) ตามขอบเขตงานที่ระบุในเอกสารนี้ **ฟรีเป็นเวลา 30 วัน** นับจากวันส่งมอบงานสมบูรณ์
+2. **ขอบเขตฟีเจอร์พร้อมใช้ตลอดปี 2026 (2026-Ready Standard):**
+   - เทคโนโลยีที่เลือกใช้ (Nuxt 3 + Modern Web Architecture) ได้รับการออกแบบให้เสถียร รองรับมาตรฐาน Web และ SEO ตลอดปี 2026 โดยไม่ต้องกังวลเรื่องระบบตกรุ่น
+3. **การต่อยอดฟีเจอร์ใหม่ในอนาคต (Future Enhancements & Maintenance):**
+   - หาก StudyWiz มีความประสงค์จะพัฒนาฟีเจอร์เพิ่มเติมภายนอกขอบเขตเดิม (New Features / New Business Process) เช่น ระบบชำระเงินออนไลน์, ระบบ Portal นักเรียน หรือฟังก์ชันเฉพาะทางอื่นๆ จะคิดค่าบริการในรูปแบบ **Change Request (CR)** หรือ **Maintenance Service Agreement** ตามเนื้องานในแต่ละรอบการพัฒนา ทำให้ลูกค้าควบคุมงบประมาณได้ตามต้องการ
