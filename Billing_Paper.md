@@ -1,6 +1,6 @@
 # ใบเสนอราคาและข้อตกลงการพัฒนาโครงการ (Project Quotation & Service Agreement)
-**โครงการ:** Replatforming studyWiz สู่ Web Application สมัยใหม่ และพัฒนาระบบ StudyWiz Custom CMS Dashboard  
-**ผู้จัดทำ:** นายธนดล เพ็งจันทร์ (Tanadol Phengchan) — Software Engineer  
+**โครงการ:** Replatforming studyWiz สู่ Modernize Web Application และพัฒนาระบบ StudyWiz Custom CMS Dashboard  
+**ผู้จัดทำ:** นายธนดล เป็งจันทร์ (Tanadol Phengchan) — Software Engineer  
 **ลูกค้า/ผู้ว่าจ้าง:** สถาบันแนะแนวการศึกษาต่อต่างประเทศ StudyWiz  
 **วันที่ออกเอกสาร:** 7 กันยายน 2026  
 **สถานะ:** เอกสารข้อเสนอราคาและแผนการดำเนินงานฉบับทางการ (Official Proposal)  
