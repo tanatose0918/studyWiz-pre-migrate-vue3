@@ -28,13 +28,22 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', 'Prompt', sans-serif;
-    letter-spacing: -0.01em;
+    letter-spacing: 0.05em;
     color: #000000;
   }
 
   p, span, li, a {
     color: inherit;
   }
+}
+
+/* Luxury & Editorial Typography Utilities */
+.tracking-luxury {
+  letter-spacing: 0.2rem;
+}
+
+.tracking-spaced {
+  letter-spacing: 0.12rem;
 }
 
 /* Custom Highlight & Button Utilities */
