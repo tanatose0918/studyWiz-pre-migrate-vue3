@@ -1,0 +1,328 @@
+[
+  {
+    "_id": "673f00010000000000000001",
+    "slug": "",
+    "path": "/",
+    "title": "หน้าแรก (Home)",
+    "isSystem": true,
+    "status": "published",
+    "seo": {
+      "metaTitle": "StudyWiz - Unlock Your Global Future | ศูนย์แนะแนวศึกษาต่อต่างประเทศ",
+      "metaDescription": "Unlock Your Global Future — บันไดสู่มหาวิทยาลัยชั้นนำระดับโลก โดย StudyWiz ผู้เชี่ยวชาญการแนะแนวศึกษาต่อต่างประเทศมากว่า 38 ปี สมาชิก TIECA & FELCA ให้คำปรึกษาฟรีทุกระดับการศึกษา",
+      "ogImage": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80"
+    },
+    "sections": [
+      {
+        "id": "sec-hero",
+        "componentType": "HeroLuxuryCarousel",
+        "name": "Hero Section (Luxury Minimal)",
+        "order": 1,
+        "isEnabled": true,
+        "props": {
+          "kicker": "STUDYWIZ • ESTABLISHED 1985",
+          "headline": "UNLOCK YOUR GLOBAL FUTURE",
+          "headlineTh": "บันไดสู่มหาวิทยาลัยชั้นนำระดับโลก",
+          "subtitle": "ที่ปรึกษาเรียนต่อต่างประเทศแบบ One-on-One ครบวงจร ด้วยมาตรฐาน TIECA & FELCA",
+          "primaryCta": { "text": "ปรึกษาวางแผนฟรี", "link": "#cta-consultation" },
+          "secondaryCta": { "text": "สำรวจหลักสูตร", "link": "#destinations" },
+          "ribbonText": "100% Visa Approval Success • 38+ Years Excellence • 1,500+ Alumni Network • 0 Baht Service Fee"
+        }
+      },
+      {
+        "id": "sec-destinations",
+        "componentType": "DestinationsGrid",
+        "name": "Top Destinations Section",
+        "order": 2,
+        "isEnabled": true,
+        "props": {
+          "badge": "Global Destinations",
+          "title": "จุดหมายปลายทางยอดนิยม (Top Destinations)",
+          "subtitle": "เลือกเรียนต่อในประเทศชั้นนำที่มีมาตรฐานการศึกษาสากล พร้อมโอกาสทำงานและขอทุนการศึกษา",
+          "viewAllLink": "/country",
+          "featuredCountries": ["uk", "australia", "usa", "nz-canada"]
+        }
+      },
+      {
+        "id": "sec-budget",
+        "componentType": "BudgetComparison",
+        "name": "Transparent Budget Planning Section",
+        "order": 3,
+        "isEnabled": true,
+        "props": {
+          "badge": "Transparent Financial Planning",
+          "title": "วางแผนงบประมาณอย่างโปร่งใส ไร้ค่าใช้จ่ายแอบแฝง",
+          "subTagline": "เริ่มต้นเฉลี่ยเพียง 35,000 บาท/เดือน วางแผนค่าใช้จ่ายได้ชัดเจนทุกมิติ"
+        }
+      },
+      {
+        "id": "sec-whyus",
+        "componentType": "BentoGridWhyUs",
+        "name": "Why Choose StudyWiz (Bento Grid)",
+        "order": 4,
+        "isEnabled": true,
+        "props": {
+          "badge": "Why Choose StudyWiz",
+          "title": "ทำไมผู้ปกครองและนักเรียนกว่า 1,500 คน จึงไว้วางใจเรามาตลอด 38 ปี",
+          "subtitle": "ความใส่ใจในทุกรายละเอียดคือหัวใจของเรา เราคัดสรรสิ่งที่ดีและเหมาะสมที่สุดสำหรับเป้าหมายของแต่ละบุคคล"
+        }
+      },
+      {
+        "id": "sec-blog",
+        "componentType": "FeaturedBlogFeed",
+        "name": "Featured Blog Section",
+        "order": 5,
+        "isEnabled": true,
+        "props": {
+          "badge": "บทความและข่าวสาร",
+          "title": "อัปเดตสาระ & รีวิวจากผู้เรียนจริง",
+          "subtitle": "เจาะลึกข้อมูลการเรียนต่อต่างประเทศ ทุนการศึกษา และประสบการณ์ตรงจากรุ่นพี่",
+          "limit": 3,
+          "viewAllLink": "/blog/all"
+        }
+      },
+      {
+        "id": "sec-cta",
+        "componentType": "CtaFastBooking",
+        "name": "Full-Width Crimson CTA & Fast Booking",
+        "order": 6,
+        "isEnabled": true,
+        "props": {
+          "badge": "One-on-One Free Consultation",
+          "headline": "จองเวลาปรึกษาวางแผนเรียนต่อฟรี กับผู้เชี่ยวชาญวันนี้",
+          "subtext": "ไม่มีค่าใช้จ่ายในการให้คำปรึกษาเบื้องต้น พร้อมประเมินโอกาสขอทุนฟรีและวางแผนงบประมาณเฉพาะบุคคล",
+          "lineAccount": "@studywiz",
+          "enableFastForm": true,
+          "enableQrCode": true
+        }
+      }
+    ],
+    "createdAt": "2026-09-06T10:00:00.000Z",
+    "updatedAt": "2026-09-28T15:30:00.000Z"
+  },
+  {
+    "_id": "673f00010000000000000002",
+    "slug": "about",
+    "path": "/about",
+    "title": "เกี่ยวกับเรา (About StudyWiz)",
+    "isSystem": true,
+    "status": "published",
+    "seo": {
+      "metaTitle": "เกี่ยวกับเรา | Studywiz ศูนย์แนะแนวศึกษาต่อต่างประเทศ ก่อตั้งปี 2528",
+      "metaDescription": "ทำความรู้จัก Studywiz ผู้นำด้านการแนะแนวศึกษาต่อต่างประเทศมากว่า 38 ปี สมาชิก TIECA & FELCA มุ่งมั่นเปิดโอกาสการศึกษาแก่ทุกคน",
+      "ogImage": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80"
+    },
+    "sections": [
+      {
+        "id": "sec-about-philosophy",
+        "componentType": "PhilosophyVideo",
+        "name": "Philosophy & Video Narrative",
+        "order": 1,
+        "isEnabled": true,
+        "props": {
+          "headline": "โอกาสทางการศึกษาไม่ควรถูกปิดกั้นด้วยอายุ งบประมาณ หรือเกรดเฉลี่ย",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "showAccreditationBadges": true
+        }
+      },
+      {
+        "id": "sec-about-cta",
+        "componentType": "CtaBannerStrip",
+        "name": "Consultation Banner Strip",
+        "order": 2,
+        "isEnabled": true,
+        "props": {
+          "title": "พร้อมเริ่มต้นเส้นทางอนาคตกับเราแล้วหรือยัง?",
+          "subtitle": "ติดต่อพูดคุยกับทีมงานที่ปรึกษามืออาชีพได้ทุกวัน"
+        }
+      }
+    ],
+    "createdAt": "2026-09-06T10:00:00.000Z",
+    "updatedAt": "2026-09-28T15:30:00.000Z"
+  },
+  {
+    "_id": "673f00010000000000000003",
+    "slug": "country",
+    "path": "/country",
+    "title": "ค้นหาประเทศ (Destinations)",
+    "isSystem": true,
+    "status": "published",
+    "seo": {
+      "metaTitle": "ประเทศปลายทางเรียนต่อยอดนิยม 16 ประเทศ | Studywiz",
+      "metaDescription": "สำรวจข้อมูล 16 ประเทศปลายทางเรียนต่อยอดนิยม อังกฤษ ออสเตรเลีย อเมริกา แคนาดา นิวซีแลนด์ ญี่ปุ่น จีน ยุโรป พร้อมข้อมูลทุนการศึกษา",
+      "ogImage": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1200&q=80"
+    },
+    "sections": [
+      {
+        "id": "sec-country-list",
+        "componentType": "DestinationsGrid",
+        "name": "Full 16 Countries Filterable Grid",
+        "order": 1,
+        "isEnabled": true,
+        "props": {
+          "badge": "16 Global Destinations",
+          "title": "ค้นหาประเทศและสถาบันการศึกษาชั้นนำทั่วโลก",
+          "subtitle": "เลือกประเทศที่คุณสนใจเพื่อดูข้อมูลทุนการศึกษา ค่าใช้จ่าย และขั้นตอนการสมัคร",
+          "enableRegionFilter": true
+        }
+      }
+    ],
+    "createdAt": "2026-09-06T10:00:00.000Z",
+    "updatedAt": "2026-09-28T15:30:00.000Z"
+  },
+  {
+    "_id": "673f00010000000000000004",
+    "slug": "level",
+    "path": "/level",
+    "title": "ระดับการศึกษา (Study Levels)",
+    "isSystem": true,
+    "status": "published",
+    "seo": {
+      "metaTitle": "ระดับการศึกษาต่อต่างประเทศ | Studywiz",
+      "metaDescription": "หลักสูตรเรียนต่อต่างประเทศทุกระดับ ภาษา มัธยม อนุปริญญา ปริญญาตรี ปริญญาโท และปริญญาเอก",
+      "ogImage": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80"
+    },
+    "sections": [
+      {
+        "id": "sec-level-grid",
+        "componentType": "ProgramGrid",
+        "name": "Program Levels Grid",
+        "order": 1,
+        "isEnabled": true,
+        "props": {
+          "badge": "Comprehensive Programs",
+          "title": "เลือกหลักสูตรที่ตรงกับเป้าหมายของคุณ",
+          "subtitle": "ตั้งแต่ระดับเรียนภาษา คอร์สวิชาชีพ มัธยมศึกษา ไปจนถึงปริญญาตรีและโท"
+        }
+      },
+      {
+        "id": "sec-level-budget",
+        "componentType": "BudgetComparison",
+        "name": "Level Budget Guide",
+        "order": 2,
+        "isEnabled": true,
+        "props": {
+          "badge": "Financial Planning",
+          "title": "เปรียบเทียบค่าใช้จ่ายตามระดับการศึกษา"
+        }
+      }
+    ],
+    "createdAt": "2026-09-06T10:00:00.000Z",
+    "updatedAt": "2026-09-28T15:30:00.000Z"
+  },
+  {
+    "_id": "673f00010000000000000005",
+    "slug": "testimonial",
+    "path": "/testimonial",
+    "title": "รีวิวนักเรียน (Alumni Testimonials)",
+    "isSystem": true,
+    "status": "published",
+    "seo": {
+      "metaTitle": "รีวิวความประทับใจจากนักเรียนและผู้ปกครอง | Studywiz",
+      "metaDescription": "ประสบการณ์ตรงจากรุ่นพี่นักเรียนไทยที่ไปศึกษาต่อในมหาวิทยาลัยและโรงเรียนชั้นนำระดับโลก โดยการดูแลของ Studywiz",
+      "ogImage": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=80"
+    },
+    "sections": [
+      {
+        "id": "sec-testi-bento",
+        "componentType": "BentoGridWhyUs",
+        "name": "Alumni Voices & Trust Pillars",
+        "order": 1,
+        "isEnabled": true,
+        "props": {
+          "title": "เสียงตอบรับจากนักเรียนและผู้ปกครองกว่า 1,500 ครอบครัว"
+        }
+      }
+    ],
+    "createdAt": "2026-09-06T10:00:00.000Z",
+    "updatedAt": "2026-09-28T15:30:00.000Z"
+  },
+  {
+    "_id": "673f00010000000000000006",
+    "slug": "blog",
+    "path": "/blog",
+    "title": "บทความและสาระ (Blog & Articles)",
+    "isSystem": true,
+    "status": "published",
+    "seo": {
+      "metaTitle": "บทความ ข่าวสาร และเกร็ดความรู้เรียนต่อนอก | Studywiz",
+      "metaDescription": "รวมบทความคู่มือการเตรียมตัวเรียนต่อนอก ทุนการศึกษา อัปเดตระเบียบวีซ่า และเทคนิคการเขียน SOP",
+      "ogImage": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1200&q=80"
+    },
+    "sections": [
+      {
+        "id": "sec-blog-feed",
+        "componentType": "FeaturedBlogFeed",
+        "name": "Blog Articles Feed",
+        "order": 1,
+        "isEnabled": true,
+        "props": {
+          "title": "สาระน่ารู้และบทความแนะนำสำหรับนักเรียนไทย",
+          "enableCategoryFilter": true
+        }
+      }
+    ],
+    "createdAt": "2026-09-06T10:00:00.000Z",
+    "updatedAt": "2026-09-28T15:30:00.000Z"
+  },
+  {
+    "_id": "673f00010000000000000007",
+    "slug": "activities",
+    "path": "/activities",
+    "title": "กิจกรรมและสัมมนา (Activities & Events)",
+    "isSystem": true,
+    "status": "published",
+    "seo": {
+      "metaTitle": "กิจกรรม สัมมนา และอีเวนต์การศึกษา | Studywiz",
+      "metaDescription": "ติดตามภาพบรรยากาศงานนิทรรศการศึกษาต่อต่างประเทศ การสอบสัมภาษณ์ตรงกับตัวแทนมหาวิทยาลัย และกิจกรรมสัมมนาฟรี",
+      "ogImage": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80"
+    },
+    "sections": [
+      {
+        "id": "sec-act-list",
+        "componentType": "SectionHeading",
+        "name": "Activities Showcase Header",
+        "order": 1,
+        "isEnabled": true,
+        "props": {
+          "badge": "Events & Seminars",
+          "title": "กิจกรรม งานสัมมนา และงานพบปะตัวแทนสถาบัน",
+          "subtitle": "เปิดโอกาสพูดคุยกับเจ้าหน้าที่สถาบันการศึกษาโดยตรงจากต่างประเทศ"
+        }
+      }
+    ],
+    "createdAt": "2026-09-06T10:00:00.000Z",
+    "updatedAt": "2026-09-28T15:30:00.000Z"
+  },
+  {
+    "_id": "673f00010000000000000008",
+    "slug": "contact",
+    "path": "/contact",
+    "title": "ติดต่อเรา (Contact Us)",
+    "isSystem": true,
+    "status": "published",
+    "seo": {
+      "metaTitle": "ติดต่อ Studywiz | ศูนย์แนะแนวศึกษาต่อต่างประเทศ กรุงเทพฯ และเชียงใหม่",
+      "metaDescription": "ติดต่อสอบถามข้อมูลเรียนต่อต่างประเทศ สำนักงานใหญ่กรุงเทพฯ (ซอยพหลโยธิน 19/1) และสาขาเชียงใหม่ ปรึกษาฟรีทุกช่องทาง",
+      "ogImage": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80"
+    },
+    "sections": [
+      {
+        "id": "sec-contact-cta",
+        "componentType": "CtaFastBooking",
+        "name": "Contact Offices & Fast Inquiry Form",
+        "order": 1,
+        "isEnabled": true,
+        "props": {
+          "badge": "Get In Touch",
+          "headline": "ติดต่อเราเพื่อรับคำปรึกษาฟรี",
+          "subtext": "เจ้าหน้าที่ผู้เชี่ยวชาญพร้อมให้ข้อมูลและวางแผนร่วมกับคุณอย่างตรงไปตรงมา",
+          "lineAccount": "@studywiz",
+          "enableFastForm": true,
+          "enableQrCode": true
+        }
+      }
+    ],
+    "createdAt": "2026-09-06T10:00:00.000Z",
+    "updatedAt": "2026-09-28T15:30:00.000Z"
+  }
+]
