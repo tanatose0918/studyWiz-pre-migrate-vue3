@@ -324,5 +324,58 @@
     ],
     "createdAt": "2026-09-06T10:00:00.000Z",
     "updatedAt": "2026-09-28T15:30:00.000Z"
+  },
+  {
+    "_id": "673f00010000000000000009",
+    "slug": "high-school",
+    "path": "/high-school",
+    "title": "โรงเรียนมัธยมศึกษาในต่างประเทศ (High School Programs)",
+    "isSystem": true,
+    "status": "published",
+    "seo": {
+      "metaTitle": "เรียนต่อระดับมัธยมในต่างประเทศ แคนาดา อังกฤษ อเมริกา จีน - Studywiz",
+      "metaDescription": "หลักสูตรมัธยมศึกษามาตรฐานสากล ทั้งแบบโรงเรียนประจำ (Boarding School) และ Homestay ปูทางสู่มหาวิทยาลัยระดับโลก พร้อมการดูแลใกล้ชิด",
+      "ogImage": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80"
+    },
+    "sections": [
+      {
+        "id": "sec-hs-hero",
+        "componentType": "SectionHeading",
+        "name": "High School Header & Breadcrumb",
+        "order": 1,
+        "isEnabled": true,
+        "props": {
+          "badge": "High School Programs",
+          "title": "โรงเรียนมัธยมศึกษาในต่างประเทศ",
+          "subtitle": "หลักสูตรมาตรฐานสากล ทั้งแบบโรงเรียนประจำ (Boarding School) และโรงเรียนรัฐบาล พร้อมการดูแลอย่างใกล้ชิด",
+          "align": "left"
+        }
+      },
+      {
+        "id": "sec-hs-grid",
+        "componentType": "ProgramGrid",
+        "name": "Partner High Schools Grid",
+        "order": 2,
+        "isEnabled": true,
+        "props": {
+          "filterLevel": "highschool"
+        }
+      },
+      {
+        "id": "sec-hs-advisory",
+        "componentType": "CtaBannerStrip",
+        "name": "High School Advisory Banner",
+        "order": 3,
+        "isEnabled": true,
+        "props": {
+          "title": "สนใจส่งบุตรหลานเรียนต่อระดับมัธยม?",
+          "subtitle": "ผู้เชี่ยวชาญของ Studywiz พร้อมให้คำปรึกษา แนะนำโรงเรียนที่เหมาะสม และดูแลเรื่องวีซ่าผู้ปกครอง/ผู้ติดตามอย่างครบวงจร",
+          "primaryCta": { "text": "นัดคุยกับที่ปรึกษา", "link": "/contact" },
+          "secondaryCta": { "text": "ทักแชท LINE", "link": "https://line.me/R/ti/p/@studywiz" }
+        }
+      }
+    ],
+    "createdAt": "2026-09-28T16:00:00.000Z",
+    "updatedAt": "2026-09-28T16:00:00.000Z"
   }
 ]
