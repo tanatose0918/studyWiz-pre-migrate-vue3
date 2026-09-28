@@ -2,6 +2,10 @@
 import institutions from '~/data/institutions.json';
 import SectionHeading from '~/components/ui/SectionHeading.vue';
 
+definePageMeta({
+  alias: ['/high-school', '/High-School']
+});
+
 useHead({
   title: 'เรียนต่อระดับมัธยมในต่างประเทศ - Studywiz',
   meta: [
