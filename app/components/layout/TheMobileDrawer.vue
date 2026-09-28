@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import siteSettings from '~/data/siteSettings.json';
+import navigationData from '~/data/navigation.json';
 
 defineProps<{
   isOpen: boolean;
@@ -10,28 +11,16 @@ const emit = defineEmits<{
   (e: 'close'): void;
 }>();
 
-const isBlogExpanded = ref(true);
+const expandedMap = ref<Record<string, boolean>>({
+  'nav-blog': true,
+  'nav-level': true
+});
 
-const navLinks = [
-  { name: 'หน้าแรก', path: '/' },
-  { name: 'ค้นหาประเทศ', path: '/country' },
-  { name: 'ระดับการศึกษา', path: '/level' },
-  { name: 'รีวิวนักเรียน', path: '/testimonial' },
-  { 
-    name: 'บทความ & PR', 
-    path: '/blog',
-    hasDropdown: true,
-    children: [
-      { name: 'บทความทั้งหมด', path: '/blog/all' },
-      { name: 'เรียนต่อจีน เกาหลี ญี่ปุ่น', path: '/blog/category/china-korea-japan' },
-      { name: 'เรียนต่อยุโรปและรัสเซีย', path: '/blog/category/europe-russia' },
-      { name: 'เรียนต่ออเมริกาและแคนาดา', path: '/blog/category/usa-canada' },
-    ]
-  },
-  { name: 'กิจกรรม & สัมมนา', path: '/activities' },
-  { name: 'เกี่ยวกับ Studywiz', path: '/about' },
-  { name: 'ติดต่อเรา', path: '/contact' },
-];
+const toggleExpand = (id: string) => {
+  expandedMap.value[id] = !expandedMap.value[id];
+};
+
+const navLinks = navigationData;
 
 const primaryPhone = siteSettings.hotlinePhones[0] || '08-1934-9695';
 const lineUrl = siteSettings.socialLinks.line;
@@ -92,19 +81,19 @@ const lineUrl = siteSettings.socialLinks.line;
           <template v-for="item in navLinks" :key="item.path">
             <div v-if="item.hasDropdown" class="space-y-1">
               <div 
-                @click="isBlogExpanded = !isBlogExpanded"
+                @click="toggleExpand(item.id)"
                 class="flex items-center justify-between px-3 py-2.5 rounded-xl text-slate-800 font-medium text-sm hover:bg-slate-50 cursor-pointer"
               >
                 <span>{{ item.name }}</span>
                 <AppIcon 
                   name="chevron-down" 
                   class="w-3.5 h-3.5 text-slate-400 transform transition-transform" 
-                  :class="{ 'rotate-180': isBlogExpanded }" 
+                  :class="{ 'rotate-180': expandedMap[item.id] }" 
                 />
               </div>
 
               <!-- Submenu -->
-              <div v-show="isBlogExpanded" class="pl-4 space-y-1 border-l-2 border-brand-100 ml-3">
+              <div v-show="expandedMap[item.id]" class="pl-4 space-y-1 border-l-2 border-brand-100 ml-3">
                 <NuxtLink 
                   v-for="sub in item.children" 
                   :key="sub.path"

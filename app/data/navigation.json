@@ -1,0 +1,55 @@
+[
+  {
+    "id": "nav-home",
+    "name": "หน้าแรก",
+    "path": "/"
+  },
+  {
+    "id": "nav-country",
+    "name": "ค้นหาประเทศ",
+    "path": "/country"
+  },
+  {
+    "id": "nav-level",
+    "name": "ระดับการศึกษา",
+    "path": "/level",
+    "hasDropdown": true,
+    "children": [
+      { "name": "ภาพรวมระดับการศึกษา", "path": "/level" },
+      { "name": "มัธยมศึกษา (High School)", "path": "/high-school" },
+      { "name": "มหาวิทยาลัย (University)", "path": "/country" }
+    ]
+  },
+  {
+    "id": "nav-testimonial",
+    "name": "รีวิวนักเรียน",
+    "path": "/testimonial"
+  },
+  {
+    "id": "nav-blog",
+    "name": "บทความ & PR",
+    "path": "/blog",
+    "hasDropdown": true,
+    "children": [
+      { "name": "บทความทั้งหมด", "path": "/blog" },
+      { "name": "เรียนต่อจีน เกาหลี ญี่ปุ่น", "path": "/blog/category/china-korea-japan" },
+      { "name": "เรียนต่อยุโรปและรัสเซีย", "path": "/blog/category/europe-russia" },
+      { "name": "เรียนต่ออเมริกาและแคนาดา", "path": "/blog/category/usa-canada" }
+    ]
+  },
+  {
+    "id": "nav-activities",
+    "name": "กิจกรรม & สัมมนา",
+    "path": "/activities"
+  },
+  {
+    "id": "nav-about",
+    "name": "เกี่ยวกับเรา",
+    "path": "/about"
+  },
+  {
+    "id": "nav-contact",
+    "name": "ติดต่อเรา",
+    "path": "/contact"
+  }
+]

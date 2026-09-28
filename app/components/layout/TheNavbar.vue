@@ -1,32 +1,13 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import navigationData from '~/data/navigation.json';
 
 const emit = defineEmits<{
   (e: 'toggleDrawer'): void;
 }>();
 
-const isBlogDropdownOpen = ref(false);
-
-const navLinks = [
-  { name: 'หน้าแรก', path: '/' },
-  { name: 'ประเทศ', path: '/country' },
-  { name: 'ระดับการศึกษา', path: '/level' },
-  { name: 'รีวิวนักเรียน', path: '/testimonial' },
-  { 
-    name: 'บทความ & PR', 
-    path: '/blog',
-    hasDropdown: true,
-    children: [
-      { name: 'บทความทั้งหมด', path: '/blog/all' },
-      { name: 'เรียนต่อจีน เกาหลี ญี่ปุ่น', path: '/blog/category/china-korea-japan' },
-      { name: 'เรียนต่อยุโรปและรัสเซีย', path: '/blog/category/europe-russia' },
-      { name: 'เรียนต่ออเมริกาและแคนาดา', path: '/blog/category/usa-canada' },
-    ]
-  },
-  { name: 'กิจกรรม', path: '/activities' },
-  { name: 'เกี่ยวกับเรา', path: '/about' },
-  { name: 'ติดต่อเรา', path: '/contact' },
-];
+const activeDropdownId = ref<string | null>(null);
+const navLinks = navigationData;
 </script>
 
 <template>
@@ -46,12 +27,12 @@ const navLinks = [
       <nav class="hidden lg:flex items-center space-x-1">
         <template v-for="item in navLinks" :key="item.path">
           
-          <!-- Dropdown item (Blog) -->
+          <!-- Dropdown item -->
           <div 
             v-if="item.hasDropdown" 
             class="relative"
-            @mouseenter="isBlogDropdownOpen = true"
-            @mouseleave="isBlogDropdownOpen = false"
+            @mouseenter="activeDropdownId = item.id"
+            @mouseleave="activeDropdownId = null"
           >
             <NuxtLink 
               :to="item.path"
@@ -72,7 +53,7 @@ const navLinks = [
               leave-to-class="transform scale-95 opacity-0 -translate-y-1"
             >
               <div 
-                v-show="isBlogDropdownOpen" 
+                v-show="activeDropdownId === item.id" 
                 class="absolute left-0 top-full pt-1 w-64 z-50"
               >
                 <div class="bg-white rounded-xl shadow-xl border border-slate-100 p-2 overflow-hidden">

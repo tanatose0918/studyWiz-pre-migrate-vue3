@@ -4,7 +4,7 @@ import TheTopBar from '~/components/layout/TheTopBar.vue';
 import TheNavbar from '~/components/layout/TheNavbar.vue';
 import TheMobileDrawer from '~/components/layout/TheMobileDrawer.vue';
 import TheFooter from '~/components/layout/TheFooter.vue';
-import FloatingContactSpeedDial from '~/components/layout/FloatingContactSpeedDial.vue';
+import TheOverlayButton from '~/components/layout/TheOverlayButton.vue';
 
 const isDrawerOpen = ref(false);
 </script>
@@ -31,7 +31,7 @@ const isDrawerOpen = ref(false);
     <!-- Global Footer -->
     <TheFooter />
 
-    <!-- Floating Speed Dial Contact -->
-    <FloatingContactSpeedDial />
+    <!-- Overlay Contact & Action Button -->
+    <TheOverlayButton />
   </div>
 </template>
